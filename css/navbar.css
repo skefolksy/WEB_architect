@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Kanit;
+    src: url('../assets/fonts/Kanit-Regular.ttf');
+}
+
+@font-face {
+    font-family: Itim;
+    src: url('../assets/fonts/Itim-Regular.ttf');
+}
+
 .navbar {
     position: absolute;
     top: 0;
