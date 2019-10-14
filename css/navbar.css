@@ -8,6 +8,10 @@
     src: url('../assets/fonts/Itim-Regular.ttf');
 }
 
+a, a:hover, a:active {
+    color:unset
+}
+
 .navbar {
     position: absolute;
     top: 0;
@@ -196,6 +200,7 @@
 }
 
 .nav-menu {
+    display: block;
     position: relative;
     height: 8vh;
     width: 50vh;

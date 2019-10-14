@@ -38,30 +38,30 @@
                     <div onclick="menuToggle()" id="menuWrap" class="desk-menu-wrap desk-bounce">
                         <button id="startBtn" class="desk-start-btn"
                             onclick="event.stopPropagation(); menuToggle()">Start</button>
-                        <div onclick="event.stopPropagation(); alert('hi')" class="desk-menu">
+                        <a onclick="event.stopPropagation();" href="./page1.html" class="desk-menu">
                             <img src="./assets/home/menu1.svg" />
                             <p>รู้จักทฤษฎีใหม่</p>
-                        </div>
-                        <div class="desk-menu">
+                        </a>
+                        <a onclick="event.stopPropagation();" href="./page2.html" class="desk-menu">
                             <img src="./assets/home/menu2.svg" />
                             <p>วิถีทฤษฎีใหม่</p>
-                        </div>
-                        <div class="desk-menu">
+                        </a>
+                        <a onclick="event.stopPropagation();" href="./page3.html" class="desk-menu">
                             <img src="./assets/home/menu3.svg" />
                             <p>ทฤษฎีใหม่ขั้นต้น</p>
-                        </div>
-                        <div class="desk-menu">
+                        </a>
+                        <a onclick="event.stopPropagation();" href="./page4.html" class="desk-menu">
                             <img src="./assets/home/menu4.svg" />
                             <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
-                        </div>
-                        <div class="desk-menu">
+                        </a>
+                        <a onclick="event.stopPropagation();" href="./page5.html" class="desk-menu">
                             <img src="./assets/home/menu5.svg" />
                             <p>ฝากให้รู้ไว้</p>
-                        </div>
-                        <div class="desk-menu">
+                        </a>
+                        <a onclick="event.stopPropagation();" href="./page6.html" class="desk-menu">
                             <img src="./assets/home/menu6.svg" />
                             <p>หน่วยงานให้คำปรึกษา</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -73,10 +73,6 @@
             <div class="mob-home">
                 <!-- navbar -->
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand">
-                        <!-- <img v-show="!hideLogo" class="logo" src="./assets/logo.svg" /> -->
-                    </a>
-
                     <div onclick="openMenu()" id="hamburger"
                         class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
                         <span class="nav-hamburger-box">
@@ -84,55 +80,32 @@
                         </span>
                     </div>
 
-                    <!-- <div class="navbar-collapse d-none d-lg-block">
-                    <ul class="navbar-nav ml-auto">
-                        <li :class="['nav-item', {'active': activePage==1}]">
-                            <a class="nav-link">รู้จักทฤษฎีใหม่</a>
-                        </li>
-                        <li :class="['nav-item', {'active': activePage==2}]">
-                            <a class="nav-link">วิถีทฤษฎีใหม่</a>
-                        </li>
-                        <li :class="['nav-item', {'active': activePage==3}]">
-                            <a class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
-                        </li>
-                        <li :class="['nav-item', {'active': activePage==4}]">
-                            <a class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
-                        </li>
-                        <li :class="['nav-item', {'active': activePage==5}]">
-                            <a class="nav-link">ฝากให้รู้ไว้</a>
-                        </li>
-                        <li :class="['nav-item', {'active': activePage==6}]">
-                            <a class="nav-link">หน่วยงานให้คำปรึกษา</a>
-                        </li>
-                    </ul>
-                </div> -->
-
                     <div id="menuMobile" class="nav-hide-menu">
                         <div id="menuWrap" class="nav-menu-wrap nav-bounce">
-                            <div class="nav-menu">
+                            <a href="./page1.html" class="nav-menu">
                                 <img src="./assets/home/menu1.svg" />
                                 <p>รู้จักทฤษฎีใหม่</p>
-                            </div>
-                            <div class="nav-menu">
+                            </a>
+                            <a href="./page2.html" class="nav-menu">
                                 <img src="./assets/home/menu2.svg" />
                                 <p>วิถีทฤษฎีใหม่</p>
-                            </div>
-                            <div class="nav-menu">
+                            </a>
+                            <a href="./page3.html" class="nav-menu">
                                 <img src="./assets/home/menu3.svg" />
                                 <p>ทฤษฎีใหม่ขั้นต้น</p>
-                            </div>
-                            <div class="nav-menu">
+                            </a>
+                            <a href="./page4.html" class="nav-menu">
                                 <img src="./assets/home/menu4.svg" />
                                 <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
-                            </div>
-                            <div class="nav-menu">
+                            </a>
+                            <a href="./page5.html" class="nav-menu">
                                 <img src="./assets/home/menu5.svg" />
                                 <p>ฝากให้รู้ไว้</p>
-                            </div>
-                            <div class="nav-menu">
+                            </a>
+                            <a href="./page6.html" class="nav-menu">
                                 <img src="./assets/home/menu6.svg" />
                                 <p>หน่วยงานให้คำปรึกษา</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </nav>

@@ -86,6 +86,7 @@
 }
 
 .desk-menu {
+    display: block;
     position: relative;
     height: 8vh;
     width: 50vh;
@@ -190,16 +191,18 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
-  .mob-layer {
+}
+
+.mob-layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     min-height: 100vh;
     object-fit: cover;
-  }
-  .mob-content {
+}
+
+.mob-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -209,18 +212,21 @@
     transition: all ease-in-out 1s;
     text-align: center;
     color: white;
-  }
-  .mob-content .mob-title {
+}
+
+.mob-content .mob-title {
     font-family: Kanit;
     font-size: 3vh;
     padding: 0;
     margin: 0;
-  }
-  .mob-content .mob-sub-title {
+}
+
+.mob-content .mob-sub-title {
     font-family: Itim;
     font-size: 2vh;
-  }
-  .mob-filter {
+}
+
+.mob-filter {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -229,4 +235,4 @@
     background-color: black;
     mix-blend-mode: multiply;
     opacity: 0.5;
-  }
+}
