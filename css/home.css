@@ -1,12 +1,12 @@
 /* desktop */
-.home {
+.desk-home {
     position: relative;
     overflow: hidden !important;
     width: 100vw;
     height: 100vh;
 }
 
-.logo {
+.desk-logo {
     position: absolute;
     top: 3vh;
     left: 5vh;
@@ -14,7 +14,7 @@
     z-index: 99;
 }
 
-.layer {
+.desk-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -23,7 +23,7 @@
     object-fit: cover;
 }
 
-.content {
+.desk-content {
     position: absolute;
     top: 33vh;
     width: 100%;
@@ -35,24 +35,24 @@
     color: white;
 }
 
-.content .title {
+.desk-content .desk-title {
     font-family: Kanit;
     font-size: 3vh;
     padding: 0;
     margin: 0;
 }
 
-.content .sub-title {
+.desk-content .desk-sub-title {
     font-family: Itim;
     font-size: 2vh;
 }
 
-.hide-content {
+.desk-hide-content {
     opacity: 0 !important;
     transform: translateX(-50%) scale(0) !important;
 }
 
-.start-btn {
+.desk-start-btn {
 
     position: relative;
     top: -75px;
@@ -70,7 +70,7 @@
     cursor: pointer;
 }
 
-.menu-wrap {
+.desk-menu-wrap {
     background-image: url(../assets/home/wood.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -85,22 +85,22 @@
     transition: all ease-in-out 1s;
 }
 
-.menu {
+.desk-menu {
     position: relative;
     height: 8vh;
     width: 50vh;
     margin: 1em;
 }
 
-.menu:nth-child(odd) {
+.desk-menu:nth-child(odd) {
     transition: all 1s;
 }
 
-.menu:nth-child(even) {
+.desk-menu:nth-child(even) {
     transition: all 1.2s;
 }
 
-.menu img {
+.desk-menu img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,7 +110,7 @@
     /* z-index: -1; */
 }
 
-.menu p {
+.desk-menu p {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -123,28 +123,28 @@
     transition: all ease-in-out 0.1s;
 }
 
-.menu img:hover~p,
-.menu p:hover {
+.desk-menu img:hover~p,
+.desk-menu p:hover {
     text-shadow: 2px 2px 8px #f1f0d1;
 }
 
-.menu:hover {
+.desk-menu:hover {
     animation: spring 1s;
     animation-timing-function: ease;
 }
 
-.show-menu {
+.desk-show-menu {
     top: 26% !important;
     bottom: auto !important;
     transform: translateX(-50%) rotateY(0deg) !important;
     transition: all 1s;
 }
 
-.show-menu .menu {
+.desk-show-menu .desk-menu {
     transform: rotateY(360deg) !important;
 }
 
-.bounce {
+.desk-bounce {
     animation: bounce 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -181,3 +181,52 @@
         transform: translateY(0);
     }
 }
+
+/* mobile css */
+
+
+.mob-home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .mob-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+  .mob-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all ease-in-out 1s;
+    text-align: center;
+    color: white;
+  }
+  .mob-content .mob-title {
+    font-family: Kanit;
+    font-size: 3vh;
+    padding: 0;
+    margin: 0;
+  }
+  .mob-content .mob-sub-title {
+    font-family: Itim;
+    font-size: 2vh;
+  }
+  .mob-filter {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+  }

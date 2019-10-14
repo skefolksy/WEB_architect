@@ -13,53 +13,55 @@
 </head>
 
 <body>
-    <div class="home">
+    <div>
         <!-- desktop -->
         <div class="d-none d-md-block">
-            <div class="wrap">
-                <div id="sceneDesktop">
-                    <img id="l7" class="layer" data-depth="0.7" src="./assets/home/l7.svg" />
-                    <img id="l6" class="layer" data-depth="0.5" src="./assets/home/l6.svg" />
-                    <img id="l5" class="layer" data-depth="0.3" src="./assets/home/l5.svg" />
-                    <img id="l4" class="layer" data-depth="0.2" src="./assets/home/l4.svg" />
-                    <img id="l3" class="layer" data-depth="0.1" src="./assets/home/l3.svg" />
-                    <img id="l2" class="layer" data-depth="-0.1" src="./assets/home/l2.svg" />
-                    <img id="l1" class="layer" data-depth="-0.2" src="./assets/home/l1.svg" />
-                </div>
+            <div class="desk-home">
+                <div class="desk-wrap">
+                    <div id="sceneDesktop">
+                        <img id="l7" class="desk-layer" data-depth="0.7" src="./assets/home/l7.svg" />
+                        <img id="l6" class="desk-layer" data-depth="0.5" src="./assets/home/l6.svg" />
+                        <img id="l5" class="desk-layer" data-depth="0.3" src="./assets/home/l5.svg" />
+                        <img id="l4" class="desk-layer" data-depth="0.2" src="./assets/home/l4.svg" />
+                        <img id="l3" class="desk-layer" data-depth="0.1" src="./assets/home/l3.svg" />
+                        <img id="l2" class="desk-layer" data-depth="-0.1" src="./assets/home/l2.svg" />
+                        <img id="l1" class="desk-layer" data-depth="-0.2" src="./assets/home/l1.svg" />
+                    </div>
 
-                <div id="content" class="content">
-                    <img class="mb-5" src="./assets/logo-bd.svg" style="height: 30vh;" />
-                    <p class="title">“ทฤษฎีใหม่.....ยืดหยุ่นได้และต้องยืดหยุ่น</p>
-                    <p class="title mb-3">เหมือนชีวิตของเราทุกคนต้องมียืดหยุ่น”</p>
-                    <p class="sub-title">พระราชดำรัสเมื่อวันที่ 14 กรกฎาคม 2541</p>
-                </div>
+                    <div id="content" class="desk-content">
+                        <img class="mb-5" src="./assets/logo-bd.svg" style="height: 30vh;" />
+                        <p class="desk-title">“ทฤษฎีใหม่.....ยืดหยุ่นได้และต้องยืดหยุ่น</p>
+                        <p class="desk-title mb-3">เหมือนชีวิตของเราทุกคนต้องมียืดหยุ่น”</p>
+                        <p class="desk-sub-title">พระราชดำรัสเมื่อวันที่ 14 กรกฎาคม 2541</p>
+                    </div>
 
-                <div onclick="menuToggle()" id="menuWrap" class="menu-wrap bounce">
-                    <button id="startBtn" class="start-btn"
-                        onclick="event.stopPropagation(); menuToggle()">Start</button>
-                    <div onclick="event.stopPropagation(); alert('hi')" class="menu">
-                        <img src="./assets/home/menu1.svg" />
-                        <p>รู้จักทฤษฎีใหม่</p>
-                    </div>
-                    <div class="menu">
-                        <img src="./assets/home/menu2.svg" />
-                        <p>วิถีทฤษฎีใหม่</p>
-                    </div>
-                    <div class="menu">
-                        <img src="./assets/home/menu3.svg" />
-                        <p>ทฤษฎีใหม่ขั้นต้น</p>
-                    </div>
-                    <div class="menu">
-                        <img src="./assets/home/menu4.svg" />
-                        <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
-                    </div>
-                    <div class="menu">
-                        <img src="./assets/home/menu5.svg" />
-                        <p>ฝากให้รู้ไว้</p>
-                    </div>
-                    <div class="menu">
-                        <img src="./assets/home/menu6.svg" />
-                        <p>หน่วยงานให้คำปรึกษา</p>
+                    <div onclick="menuToggle()" id="menuWrap" class="desk-menu-wrap desk-bounce">
+                        <button id="startBtn" class="desk-start-btn"
+                            onclick="event.stopPropagation(); menuToggle()">Start</button>
+                        <div onclick="event.stopPropagation(); alert('hi')" class="desk-menu">
+                            <img src="./assets/home/menu1.svg" />
+                            <p>รู้จักทฤษฎีใหม่</p>
+                        </div>
+                        <div class="desk-menu">
+                            <img src="./assets/home/menu2.svg" />
+                            <p>วิถีทฤษฎีใหม่</p>
+                        </div>
+                        <div class="desk-menu">
+                            <img src="./assets/home/menu3.svg" />
+                            <p>ทฤษฎีใหม่ขั้นต้น</p>
+                        </div>
+                        <div class="desk-menu">
+                            <img src="./assets/home/menu4.svg" />
+                            <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+                        </div>
+                        <div class="desk-menu">
+                            <img src="./assets/home/menu5.svg" />
+                            <p>ฝากให้รู้ไว้</p>
+                        </div>
+                        <div class="desk-menu">
+                            <img src="./assets/home/menu6.svg" />
+                            <p>หน่วยงานให้คำปรึกษา</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,19 +70,21 @@
 
         <!-- mobile -->
         <div class="d-md-none d-sm-block">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand">
-                    <!-- <img v-show="!hideLogo" class="logo" src="./assets/logo.svg" /> -->
-                </a>
+            <div class="mob-home">
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand">
+                        <!-- <img v-show="!hideLogo" class="logo" src="./assets/logo.svg" /> -->
+                    </a>
 
-                <div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
-                    <span class="nav-hamburger-box">
-                        <span class="nav-hamburger-inner"></span>
-                    </span>
-                </div>
+                    <div onclick="openMenu()" id="hamburger"
+                        class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
+                        <span class="nav-hamburger-box">
+                            <span class="nav-hamburger-inner"></span>
+                        </span>
+                    </div>
 
-                <!-- <div class="navbar-collapse d-none d-lg-block">
+                    <!-- <div class="navbar-collapse d-none d-lg-block">
                     <ul class="navbar-nav ml-auto">
                         <li :class="['nav-item', {'active': activePage==1}]">
                             <a class="nav-link">รู้จักทฤษฎีใหม่</a>
@@ -103,36 +107,51 @@
                     </ul>
                 </div> -->
 
-                <div id="menuMobile" class="nav-hide-menu">
-                    <div id="menuWrap" class="nav-menu-wrap nav-bounce">
-                        <div class="nav-menu">
-                            <img src="./assets/home/menu1.svg" />
-                            <p>รู้จักทฤษฎีใหม่</p>
-                        </div>
-                        <div class="nav-menu">
-                            <img src="./assets/home/menu2.svg" />
-                            <p>วิถีทฤษฎีใหม่</p>
-                        </div>
-                        <div class="nav-menu">
-                            <img src="./assets/home/menu3.svg" />
-                            <p>ทฤษฎีใหม่ขั้นต้น</p>
-                        </div>
-                        <div class="nav-menu">
-                            <img src="./assets/home/menu4.svg" />
-                            <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
-                        </div>
-                        <div class="nav-menu">
-                            <img src="./assets/home/menu5.svg" />
-                            <p>ฝากให้รู้ไว้</p>
-                        </div>
-                        <div class="nav-menu">
-                            <img src="./assets/home/menu6.svg" />
-                            <p>หน่วยงานให้คำปรึกษา</p>
+                    <div id="menuMobile" class="nav-hide-menu">
+                        <div id="menuWrap" class="nav-menu-wrap nav-bounce">
+                            <div class="nav-menu">
+                                <img src="./assets/home/menu1.svg" />
+                                <p>รู้จักทฤษฎีใหม่</p>
+                            </div>
+                            <div class="nav-menu">
+                                <img src="./assets/home/menu2.svg" />
+                                <p>วิถีทฤษฎีใหม่</p>
+                            </div>
+                            <div class="nav-menu">
+                                <img src="./assets/home/menu3.svg" />
+                                <p>ทฤษฎีใหม่ขั้นต้น</p>
+                            </div>
+                            <div class="nav-menu">
+                                <img src="./assets/home/menu4.svg" />
+                                <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+                            </div>
+                            <div class="nav-menu">
+                                <img src="./assets/home/menu5.svg" />
+                                <p>ฝากให้รู้ไว้</p>
+                            </div>
+                            <div class="nav-menu">
+                                <img src="./assets/home/menu6.svg" />
+                                <p>หน่วยงานให้คำปรึกษา</p>
+                            </div>
                         </div>
                     </div>
+                </nav>
+                <!-- end navbar -->
+
+                <div id="sceneMobile">
+                    <img id="l3" class="mob-layer" data-depth="0.1" src="./assets/home/m-l3.svg" />
+                    <img id="l2" class="mob-layer" data-depth="-0.1" src="./assets/home/m-l2.svg" />
+                    <img id="l1" class="mob-layer" data-depth="-0.2" src="./assets/home/m-l1.svg" />
                 </div>
-            </nav>
-            <!-- end navbar -->
+                <div class="mob-filter"></div>
+
+                <div class="mob-content">
+                    <img class="mb-3" src="./assets/logo-bd.svg" style="height: 25vh;" />
+                    <p class="mob-title">“ทฤษฎีใหม่.....ยืดหยุ่นได้และต้องยืดหยุ่น</p>
+                    <p class="mob-title mb-3">เหมือนชีวิตของเราทุกคนต้องมียืดหยุ่น”</p>
+                    <p class="mob-sub-title">พระราชดำรัสเมื่อวันที่ 14 กรกฎาคม 2541</p>
+                </div>
+            </div>
         </div>
         <!-- end mobile -->
     </div>
@@ -146,10 +165,10 @@
         })
 
         function menuToggle() {
-            document.getElementById("menuWrap").classList.toggle("show-menu");
-            document.getElementById("menuWrap").classList.toggle("bounce");
-            document.getElementById("content").classList.toggle("hide-content");
-            document.getElementById("startBtn").classList.toggle("hide-content");
+            document.getElementById("menuWrap").classList.toggle("desk-show-menu");
+            document.getElementById("menuWrap").classList.toggle("desk-bounce");
+            document.getElementById("content").classList.toggle("desk-hide-content");
+            document.getElementById("startBtn").classList.toggle("desk-hide-content");
         }
     </script>
 </body>

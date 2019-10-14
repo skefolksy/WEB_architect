@@ -1,21 +1,17 @@
-.nav-navbar {
+.navbar {
     position: absolute;
     top: 0;
     width: 100vw;
     z-index: 99;
 }
 
-.nav-navbar-toggler {
-    padding: 0;
-}
-
-.nav-nav-item {
+.nav-item {
     font-family: Itim;
     color: #285e85;
     cursor: pointer;
 }
 
-.nav-nav-item:hover {
+.nav-item:hover {
     color: #76a075;
 }
 
