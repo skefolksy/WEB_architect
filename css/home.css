@@ -1,0 +1,183 @@
+/* desktop */
+.home {
+    position: relative;
+    overflow: hidden !important;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 3vh;
+    left: 5vh;
+    height: 13vh;
+    z-index: 99;
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 33vh;
+    width: 100%;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    transition: all ease-in-out 1s;
+    text-align: center;
+    color: white;
+}
+
+.content .title {
+    font-family: Kanit;
+    font-size: 3vh;
+    padding: 0;
+    margin: 0;
+}
+
+.content .sub-title {
+    font-family: Itim;
+    font-size: 2vh;
+}
+
+.hide-content {
+    opacity: 0 !important;
+    transform: translateX(-50%) scale(0) !important;
+}
+
+.start-btn {
+
+    position: relative;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    transition: all ease-in-out 1s;
+    font-family: Itim;
+    font-size: 4vh;
+    padding: 0;
+    margin: -1em 0;
+    color: #4d4032;
+    border: none;
+    background-color: Transparent;
+    cursor: pointer;
+}
+
+.menu-wrap {
+    background-image: url(../assets/home/wood.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 92%;
+    height: 75vh;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%) rotateY(-180deg);
+    color: #4d4032;
+    padding: 3em;
+    transition: all ease-in-out 1s;
+}
+
+.menu {
+    position: relative;
+    height: 8vh;
+    width: 50vh;
+    margin: 1em;
+}
+
+.menu:nth-child(odd) {
+    transition: all 1s;
+}
+
+.menu:nth-child(even) {
+    transition: all 1.2s;
+}
+
+.menu img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    cursor: pointer;
+    /* z-index: -1; */
+}
+
+.menu p {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Itim;
+    font-size: 2.5vh;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out 0.1s;
+}
+
+.menu img:hover~p,
+.menu p:hover {
+    text-shadow: 2px 2px 8px #f1f0d1;
+}
+
+.menu:hover {
+    animation: spring 1s;
+    animation-timing-function: ease;
+}
+
+.show-menu {
+    top: 26% !important;
+    bottom: auto !important;
+    transform: translateX(-50%) rotateY(0deg) !important;
+    transition: all 1s;
+}
+
+.show-menu .menu {
+    transform: rotateY(360deg) !important;
+}
+
+.bounce {
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -1vh);
+    }
+}
+
+@keyframes spring {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.2, 0.6);
+    }
+
+    30% {
+        transform: scale(0.8, 1.1);
+    }
+
+    50% {
+        transform: scale(1) translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
