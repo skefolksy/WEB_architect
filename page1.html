@@ -89,6 +89,13 @@
                         <img id="l2" class="desk-layer" data-depth="-0.1" src="./assets/page1/l2.svg" />
                         <img id="l1" class="desk-layer" data-depth="-0.3" src="./assets/page1/l1.svg" />
                     </div>
+                    <div class="desk-scene">
+                        <img id="wheat1" class="desk-layer" src="./assets/page1/wheat1.svg" />
+                        <img id="wheat2" class="desk-layer" src="./assets/page1/wheat2.svg" />
+                        <img id="leaf3" class="desk-layer" src="./assets/page1/leaf3.svg" />
+                        <img id="leaf1" class="desk-layer" src="./assets/page1/leaf1.svg" />
+                        <img id="leaf2" class="desk-layer" src="./assets/page1/leaf2.svg" />
+                    </div>
 
                     <div class="desk-header-content">
                         <h1 class="desk-title">รู้จักทฤษฎีใหม่</h1>
@@ -148,12 +155,12 @@
                                     <div id="sceneS2Desktop" class="w-100">
                                         <img id="s2-l4" class="desk-s2-layer" data-depth="0"
                                             src="./assets/page1/s2-l4.svg" />
+                                        <img id="s2-l1" class="desk-s2-layer" data-depth="-0.1"
+                                            src="./assets/page1/s2-l1.svg" />
                                         <img id="s2-l3" class="desk-s2-layer" data-depth="0.1"
                                             src="./assets/page1/s2-l3.svg" />
                                         <img id="s2-l2" class="desk-s2-layer" data-depth="-0.2"
                                             src="./assets/page1/s2-l2.svg" />
-                                        <img id="s2-l1" class="desk-s2-layer" data-depth="-0.1"
-                                            src="./assets/page1/s2-l1.svg" />
                                     </div>
                                 </div>
                             </div>
@@ -203,6 +210,30 @@
         let sceneS2Desktop = new Parallax(
             document.getElementById("sceneS2Desktop")
         );
+    </script>
+    <script>
+        window.onscroll = function () {
+            let scrolled = window.pageYOffset;
+
+            document.getElementById('l1').style.top = -(scrolled * 0.18) + "px";
+            document.getElementById('l2').style.top = -(scrolled * 0.14) + "px";
+            document.getElementById('l3').style.top = -(scrolled * 0.1) + "px";
+
+            document.getElementById('wheat1').style.bottom = (scrolled * 0.3) + "px";
+            document.getElementById('wheat2').style.bottom = (scrolled * 0.2) + "px";
+
+            document.getElementById('leaf1').style.bottom = (scrolled * 0.2) + "px";
+            document.getElementById('leaf2').style.bottom = (scrolled * 0.3) + "px";
+            document.getElementById('leaf3').style.bottom = (scrolled * 0.4) + "px";
+
+            document.getElementById('s1-l1').style.top = (scrolled * 0.05) + "px";
+            document.getElementById('s1-l2').style.top = (scrolled * 0.03) + "px";
+            document.getElementById('s1-l3').style.top = -(scrolled * 0.01) + "px";
+
+            document.getElementById('s2-l1').style.top = -(scrolled * 0.02) + "px";
+            document.getElementById('s2-l2').style.top = -(scrolled * 0.025) + "px";
+            document.getElementById('s2-l3').style.top = (scrolled * 0.03) + "px";
+        };
     </script>
 </body>
 
