@@ -63,23 +63,29 @@
 .desk-section {
     position: relative;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
 }
 
 .desk-section-1 {
     background-color: #b5be6d;
     z-index: -1;
-    padding-top: 15vh;
+    padding-top: 17vh;
     padding-bottom: 5vh;
 }
 
 .desk-section-1 .desk-title {
     color: #537d41;
+    font-size: 4vh;
+}
+
+.desk-section-1 p {
+    font-size: 2vh;
 }
 
 .desk-scene-s1-wrap {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
 }
 
@@ -106,11 +112,17 @@
 
 .desk-section-2 .desk-title {
     color: #2e583c;
+    font-size: 4vh;
+}
+
+.desk-section-2 p {
+    font-size: 2vh;
 }
 
 .desk-scene-s2-wrap {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
 }
 

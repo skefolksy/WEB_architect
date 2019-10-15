@@ -215,24 +215,24 @@
         window.onscroll = function () {
             let scrolled = window.pageYOffset;
 
-            document.getElementById('l1').style.top = -(scrolled * 0.18) + "px";
-            document.getElementById('l2').style.top = -(scrolled * 0.14) + "px";
-            document.getElementById('l3').style.top = -(scrolled * 0.1) + "px";
+            document.getElementById('l1').style.bottom = (scrolled * 0.018) + "vh";
+            document.getElementById('l2').style.bottom = (scrolled * 0.014) + "vh";
+            document.getElementById('l3').style.bottom = (scrolled * 0.01) + "vh";
 
-            document.getElementById('wheat1').style.bottom = (scrolled * 0.3) + "px";
-            document.getElementById('wheat2').style.bottom = (scrolled * 0.2) + "px";
+            document.getElementById('wheat1').style.bottom = (scrolled * 0.03) + "vh";
+            document.getElementById('wheat2').style.bottom = (scrolled * 0.02) + "vh";
 
-            document.getElementById('leaf1').style.bottom = (scrolled * 0.2) + "px";
-            document.getElementById('leaf2').style.bottom = (scrolled * 0.3) + "px";
-            document.getElementById('leaf3').style.bottom = (scrolled * 0.4) + "px";
+            document.getElementById('leaf1').style.bottom = (scrolled * 0.02) + "vh";
+            document.getElementById('leaf2').style.bottom = (scrolled * 0.03) + "vh";
+            document.getElementById('leaf3').style.bottom = (scrolled * 0.04) + "vh";
 
-            document.getElementById('s1-l1').style.top = (scrolled * 0.05) + "px";
-            document.getElementById('s1-l2').style.top = (scrolled * 0.03) + "px";
-            document.getElementById('s1-l3').style.top = -(scrolled * 0.01) + "px";
+            document.getElementById('s1-l1').style.top = (scrolled * 0.005) + "vh";
+            document.getElementById('s1-l2').style.top = (scrolled * 0.003) + "vh";
+            document.getElementById('s1-l3').style.top = -(scrolled * 0.001) + "vh";
 
-            document.getElementById('s2-l1').style.top = -(scrolled * 0.02) + "px";
-            document.getElementById('s2-l2').style.top = -(scrolled * 0.025) + "px";
-            document.getElementById('s2-l3').style.top = (scrolled * 0.03) + "px";
+            document.getElementById('s2-l1').style.top = -(scrolled * 0.002) + "vh";
+            document.getElementById('s2-l2').style.top = -(scrolled * 0.0025) + "vh";
+            document.getElementById('s2-l3').style.top = (scrolled * 0.003) + "vh";
         };
     </script>
 </body>
