@@ -106,7 +106,7 @@
 .desk-section-2 {
     background-color: #77a275;
     z-index: -2;
-    padding-top: 15vh;
+    padding-top: 25vh;
     padding-bottom: 15vh;
 }
 
@@ -137,3 +137,161 @@
     position: absolute;
     bottom: -20vh;
 }
+
+/* mobile css */
+
+.mob-main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff8dd;
+}
+
+.mob-layer {
+    position: absolute;
+    /* top: 50%; */
+    width: 100vw;
+    object-fit: cover;
+    bottom: -10vh;
+}
+
+.mob-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all ease-in-out 1s;
+    text-align: center;
+    color: white;
+}
+
+.mob-content .mob-title {
+    font-family: Kanit;
+    font-size: 3vh;
+    padding: 0;
+    margin: 0;
+}
+
+.mob-content .mob-sub-title {
+    font-family: Itim;
+    font-size: 2vh;
+}
+
+
+/* .mob-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.mob-scene {
+    position: absolute;
+    bottom: -25vh;
+} */
+
+.mob-header-content {
+    position: absolute;
+    top: 23vh;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 70%;
+}
+
+.mob-header-content .mob-title {
+    color: #BF7C40;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.mob-header-content p {
+    font-family: Itim;
+    color: #4d4032;
+    text-align: center;
+    font-size: 2vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.mob-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mob-section-1 {
+    background-color: #b5be6d;
+    z-index: -1;
+    padding-top: 17vh;
+    padding-bottom: 5vh;
+}
+
+.mob-section-1 .mob-title {
+    color: #537d41;
+    font-size: 4vh;
+}
+
+.mob-section-1 p {
+    font-size: 2vh;
+}
+
+.mob-scene-s1-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.mob-s1-layer {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    object-fit: cover;
+}
+
+.mob-s1-b {
+    position: absolute;
+    width: 100vw;
+    bottom: -10vh;
+    z-index: -1;
+}
+
+.mob-section-2 {
+    background-color: #77a275;
+    z-index: -2;
+    padding-top: 25vh;
+    padding-bottom: 15vh;
+}
+
+.mob-section-2 .mob-title {
+    color: #2e583c;
+    font-size: 4vh;
+}
+
+.mob-section-2 p {
+    font-size: 2vh;
+}
+
+.mob-scene-s2-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.mob-s2-layer {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    object-fit: cover;
+}
+
+.mob-s2-b {
+    position: absolute;
+    bottom: -20vh;
+}
+
