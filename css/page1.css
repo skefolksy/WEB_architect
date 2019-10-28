@@ -135,7 +135,6 @@
 
 .desk-s2-b {
     position: absolute;
-    bottom: -20vh;
 }
 
 /* mobile css */
@@ -144,7 +143,6 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-color: #fff8dd;
 }
 
@@ -181,7 +179,7 @@
 }
 
 
-/* .mob-header {
+.mob-header {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -190,7 +188,7 @@
 .mob-scene {
     position: absolute;
     bottom: -25vh;
-} */
+}
 
 .mob-header-content {
     position: absolute;
@@ -226,24 +224,28 @@
 .mob-section-1 {
     background-color: #b5be6d;
     z-index: -1;
-    padding-top: 17vh;
+    padding-top: 6vh;
     padding-bottom: 5vh;
+    height: auto;
 }
 
 .mob-section-1 .mob-title {
-    color: #537d41;
-    font-size: 4vh;
+    color: #FFF8DD;
+    font-size: 3.5vh;
+    text-align: center;
 }
 
 .mob-section-1 p {
     font-size: 2vh;
+    font-family: Itim; 
 }
 
 .mob-scene-s1-wrap {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-35%);
     width: 100%;
+    
 }
 
 .mob-s1-layer {

@@ -19,6 +19,11 @@
             <img class="nav-logo" src="./assets/logo.svg" />
         </a>
 
+        <div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
+            <span class="nav-hamburger-box">
+                <span class="nav-hamburger-inner"></span>
+            </span>
+        </div>
 
         <div class="navbar-collapse d-none d-lg-block">
             <ul class="navbar-nav ml-auto">
@@ -43,6 +48,34 @@
             </ul>
         </div>
 
+        <div id="menuMobile" class="nav-hide-menu">
+            <div id="menuWrap" class="nav-menu-wrap nav-bounce">
+                <a href="./page1.html" class="nav-menu">
+                    <img src="./assets/home/menu1.svg" />
+                    <p>รู้จักทฤษฎีใหม่</p>
+                </a>
+                <a href="./page2.html" class="nav-menu">
+                    <img src="./assets/home/menu2.svg" />
+                    <p>วิถีทฤษฎีใหม่</p>
+                </a>
+                <a href="./page3.html" class="nav-menu">
+                    <img src="./assets/home/menu3.svg" />
+                    <p>ทฤษฎีใหม่ขั้นต้น</p>
+                </a>
+                <a href="./page4.html" class="nav-menu">
+                    <img src="./assets/home/menu4.svg" />
+                    <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+                </a>
+                <a href="./page5.html" class="nav-menu">
+                    <img src="./assets/home/menu5.svg" />
+                    <p>ฝากให้รู้ไว้</p>
+                </a>
+                <a href="./page6.html" class="nav-menu">
+                    <img src="./assets/home/menu6.svg" />
+                    <p>หน่วยงานให้คำปรึกษา</p>
+                </a>
+            </div>
+        </div>
     </nav>
     <!-- end navbar -->
 
@@ -155,51 +188,9 @@
 
         <!-- mobile -->
         <div class="d-md-none d-sm-block">
-                <!-- navbar -->
-                <nav class="navbar navbar-expand-lg">
-                    <a href="./index.html" class="navbar-brand">
-                        <img class="nav-logo" src="./assets/logo.svg" />
-                    </a>
-                    <div onclick="openMenu()" id="hamburger"
-                        class="ml-auto d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
-                        <span class="nav-hamburger-box">
-                            <span class="nav-hamburger-inner"></span>
-                        </span>
-                    </div>
 
-                    <div id="menuMobile" class="nav-hide-menu">
-                        <div id="menuWrap" class="nav-menu-wrap nav-bounce">
-                            <a href="./page1.html" class="nav-menu">
-                                <img src="./assets/home/menu1.svg" />
-                                <p>รู้จักทฤษฎีใหม่</p>
-                            </a>
-                            <a href="./page2.html" class="nav-menu">
-                                <img src="./assets/home/menu2.svg" />
-                                <p>วิถีทฤษฎีใหม่</p>
-                            </a>
-                            <a href="./page3.html" class="nav-menu">
-                                <img src="./assets/home/menu3.svg" />
-                                <p>ทฤษฎีใหม่ขั้นต้น</p>
-                            </a>
-                            <a href="./page4.html" class="nav-menu">
-                                <img src="./assets/home/menu4.svg" />
-                                <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
-                            </a>
-                            <a href="./page5.html" class="nav-menu">
-                                <img src="./assets/home/menu5.svg" />
-                                <p>ฝากให้รู้ไว้</p>
-                            </a>
-                            <a href="./page6.html" class="nav-menu">
-                                <img src="./assets/home/menu6.svg" />
-                                <p>หน่วยงานให้คำปรึกษา</p>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-                <!-- end navbar -->
-
-                <div class="mob-main">
-                <div id="mob-header">
+            <div class="mob-main">
+                <div class="mob-header">
                     <div id="sceneMob">
                         <img id="m-l3" class="mob-layer" data-depth="0.1" src="./assets/page1/m-l3.svg" />
                         <img id="m-l2" class="mob-layer" data-depth="-0.1" src="./assets/page1/m-l2.svg" />
@@ -218,9 +209,90 @@
                         <h1 class="mob-title">รู้จักทฤษฎีใหม่</h1>
                         <p>หลังจากที่พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช บรมนาถบพิตร
                             เสด็จเยี่ยมราษฎรที่บ้านกุดตอแก่น ต.กุดสินคุ้มใหญ่ อ.เขาวง จ.กาฬสินธุ์ เมื่อวันที่ 25
-                            พฤศจิกายน 2535 ได้ทรงเห็นสภาพความยากลําบากของราษฎรในการทําเกษตรในพื้นที่อาศัยน้ำฝนที่ปลูกข้าวได้ประมาณ 1 ถัง ต่อ 1 ไร่ เพราะปลูกได้ปีละครั้งในช่วงฤดูฝนเท่านั้น</p>
+                            พฤศจิกายน 2535
+                            ได้ทรงเห็นสภาพความยากลําบากของราษฎรในการทําเกษตรในพื้นที่อาศัยน้ำฝนที่ปลูกข้าวได้ประมาณ 1
+                            ถัง ต่อ 1 ไร่ เพราะปลูกได้ปีละครั้งในช่วงฤดูฝนเท่านั้น</p>
                     </div>
                 </div>
+
+                <div class="mob-section mob-section-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pt-5 px-5 text-white">
+                                <h1 class="mob-title mb-4">ปัญหาหลักของเกษตรกร<br>ในอดีตจนถึงปัจจุบัน</h1>
+                                <p>ที่สำคัญประการหนึ่ง คือ การขาดแคลนน้ำเพื่อเกษตรกรรม
+                                    โดยเฉพาะอย่างยิ่งในเขตพื้นที่เกษตรที่อาศัยน้ำฝน
+                                    ซึ่งเป็นพื้นที่ส่วนใหญ่ของประเทศที่อยู่ในเขตที่มีฝนค่อนข้างน้อยและส่วนมากเป็นนาข้าวและพืชไร่
+                                    เกษตรกรยังคงทำการเพาะปลูกได้ปีละครั้งในช่วงฤดูฝน และมีความเสี่ยงกับความเสียหาย
+                                    อันเนื่องมาจากความแปรปรวนของดินฟ้าอากาศและฝนทิ้งช่วง
+                                    แม้ว่าจะมีการขุดบ่อหรือสระเก็บน้ำไว้ใช้บ้างแต่ก็มีขนาดไม่เพียงพอ
+                                    หรือมีปัจจัยอื่น ๆ ที่เป็นปัญหาให้มีน้ำใช้ไม่เพียงพอ
+                                    รวมทั้งระบบการปลูกพืชไม่มีหลักเกณฑ์ใดๆ และส่วนใหญ่ปลูกพืชชนิดเดียว</p>
+                                <p>ด้วยเหตุนี้ พระบาทสมเด็จพระเจ้าอยู่หัวฯ จึงทรงศึกษา
+                                    รวบรวมข้อมูลนำมาวิเคราะห์และได้พระราชทานพระราชดำริ
+                                    เพื่อให้สามารถผ่านพ้นช่วงเวลาวิกฤติการขาดแคลนน้ำได้โดยไม่เดือดร้อนและยากลำบากพระราชดำรินี้
+                                    ทรงเรียกว่า "ทฤษฎีใหม่"
+                                    อันเป็นแนวทางการจัดการที่ดินและน้ำเพื่อการเกษตรในที่ดินขนาดเล็กให้เกิดประโยชน์สูงสุด
+                                    โดยทรงทดลองเป็นแห่งแรกที่วัดมงคลชัยพัฒนา ตำบลห้วยบง อำเภอเมือง จังหวัดสระบุรี
+                                </p>
+                            </div>
+                            <div class="col-12 p-0 m-0" style="height: 80vw;">
+                                <div class="mob-scene-s1-wrap">
+                                    <div id="sceneS1Mobile" class="w-100">
+                                        <img id="m-s1-l4" class="mob-s1-layer w-75" data-depth="0"
+                                            src="./assets/page1/s1-l4.svg" />
+                                        <img id="m-s1-l3" class="mob-s1-layer w-75" data-depth="0.1"
+                                            src="./assets/page1/s1-l3.svg" />
+                                        <img id="m-s1-l2" class="mob-s1-layer w-75" data-depth="-0.1"
+                                            src="./assets/page1/s1-l2.svg" />
+                                        <img id="m-s1-l1" class="mob-s1-layer w-75" data-depth="-0.3"
+                                            src="./assets/page1/s1-l1.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="desk-s1-b" src="./assets/page1/s1-b.svg" />
+                </div>
+
+                <!-- <div class="desk-section desk-section-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 p-0 m-0">
+                                <div class="desk-scene-s2-wrap">
+                                    <div id="sceneS2Desktop" class="w-100">
+                                        <img id="s2-l4" class="desk-s2-layer" data-depth="0"
+                                            src="./assets/page1/s2-l4.svg" />
+                                        <img id="s2-l1" class="desk-s2-layer" data-depth="-0.1"
+                                            src="./assets/page1/s2-l1.svg" />
+                                        <img id="s2-l3" class="desk-s2-layer" data-depth="0.1"
+                                            src="./assets/page1/s2-l3.svg" />
+                                        <img id="s2-l2" class="desk-s2-layer" data-depth="-0.2"
+                                            src="./assets/page1/s2-l2.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 p-5 text-white">
+                                <h1 class="desk-title mb-4">ประโยชน์ทฤษฎีใหม่</h1>
+                                <p>จากพระราชดำรัสของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช
+                                    บรมนาถบพิตรที่ได้พระราชทานใน โอกาสต่าง ๆ นั้น
+                                    พอสรุปถึงประโยชน์ของทฤษฎีใหม่ได้ดังนี้</p>
+                                <p>ให้ประชาชนพออยู่พอกินสมควรแก่อัตภาพในระดับที่ประหยัดไม่อดอยาก
+                                    และเลี้ยงตนเองได้ตามหลักปรัชญา “เศรษฐกิจพอเพียง” ในหน้าแล้งมีน้ำน้อย
+                                    ก็สามารถเอาน้ำที่เก็บไว้ในสระมาปลูกพืชผัก เลี้ยงปลา หรือทำอะไรอื่น ๆ
+                                    ก็ได้แม้แต่ข้าวก็ยังปลูกได้ไม่ต้องเบียดเบียนชลประทาน ระบบใหญ่เพราะมีของตนเอง
+                                    ในปีที่ฝนตกตามฤดูกาลโดยตลอดปี ทฤษฎีใหม่นี้ก็สามารถสร้างรายได้ ให้ร่ำรวยขึ้นได้
+                                    ในกรณีที่เกิดอุทกภัยก็สามารถที่จะฟื้นตัวและช่วยตัวเองได้ในระดับหนึ่ง
+                                    โดยทางราชการไม่ต้องช่วยเหลือมากเกินไป อันเป็นการประหยัดงบประมาณด้วย</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="desk-s2-b" src="./assets/page1/s2-b.svg" />
+                </div> -->
+
+
             </div>
         </div>
         <!-- end mobile -->
@@ -247,6 +319,7 @@
         window.onscroll = function () {
             let scrolled = window.pageYOffset;
 
+            // desktop
             document.getElementById('l1').style.bottom = (scrolled * 0.018) + "vh";
             document.getElementById('l2').style.bottom = (scrolled * 0.014) + "vh";
             document.getElementById('l3').style.bottom = (scrolled * 0.01) + "vh";
@@ -265,7 +338,12 @@
             document.getElementById('s2-l1').style.top = -(scrolled * 0.002) + "vh";
             document.getElementById('s2-l2').style.top = -(scrolled * 0.0025) + "vh";
             document.getElementById('s2-l3').style.top = (scrolled * 0.003) + "vh";
+
+            // mobile
+            document.getElementById
         };
+    </script>
+    <script>
     </script>
 </body>
 
