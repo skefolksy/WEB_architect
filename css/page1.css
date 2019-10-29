@@ -256,6 +256,7 @@
 .mob-s1-layer {
     position: absolute;
     top: 0;
+    left: 50%;
     transform: translateX(-50%);
     width: 75%;
     object-fit: cover;
@@ -293,6 +294,7 @@
     width: 75%;
     object-fit: cover;
     transform: translateX(-50%);
+    left: 50%;
 }
 
 .mob-s2-b {
