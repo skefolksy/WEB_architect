@@ -316,9 +316,9 @@
             let scrolled = window.pageYOffset;
 
             // desktop
-            document.getElementById('l1').style.bottom = (scrolled * 0.018) + "vh";
-            document.getElementById('l2').style.bottom = (scrolled * 0.014) + "vh";
-            document.getElementById('l3').style.bottom = (scrolled * 0.01) + "vh";
+            document.getElementById('l3').style.left = (scrolled * 0.01) + "vh";
+            document.getElementById('l2').style.left = -(scrolled * 0.014) + "vh";
+            document.getElementById('l1').style.left = -(scrolled * 0.01) + "vh";
 
             document.getElementById('wheat1').style.bottom = (scrolled * 0.03) + "vh";
             document.getElementById('wheat2').style.bottom = (scrolled * 0.02) + "vh";
@@ -327,16 +327,16 @@
             document.getElementById('leaf2').style.bottom = (scrolled * 0.03) + "vh";
             document.getElementById('leaf3').style.bottom = (scrolled * 0.04) + "vh";
 
-            document.getElementById('s1-l1').style.top = (scrolled * 0.005) + "vh";
-            document.getElementById('s1-l2').style.top = (scrolled * 0.003) + "vh";
-            document.getElementById('s1-l3').style.top = -(scrolled * 0.001) + "vh";
+            document.getElementById('s1-l1').style.left = -(scrolled * 0.007) + "vh";
+            document.getElementById('s1-l2').style.left = (scrolled * 0.003) + "vh";
+            document.getElementById('s1-l3').style.top = (scrolled * 0.003) + "vh";
 
-            document.getElementById('s2-l1').style.top = -(scrolled * 0.002) + "vh";
-            document.getElementById('s2-l2').style.top = -(scrolled * 0.0025) + "vh";
-            document.getElementById('s2-l3').style.top = (scrolled * 0.003) + "vh";
+            document.getElementById('s2-l1').style.top = -(scrolled * 0.004) + "vh";
+            document.getElementById('s2-l2').style.left = (scrolled * 0.003) + "vh";
+            document.getElementById('s2-l3').style.left = -(scrolled * 0.005) + "vh";
 
             // mobile
-            document.getElementById
+            document.getElementById('m-')
         };
     </script>
     <script>
