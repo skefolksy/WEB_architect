@@ -90,6 +90,7 @@
                         <img id="l1" class="desk-layer" data-depth="-0.3" src="./assets/page1/l1.svg" />
                     </div>
                     <div class="desk-scene">
+                        <img id="wheat3" class="desk-layer" src="./assets/page1/wheat3.svg" />
                         <img id="wheat1" class="desk-layer" src="./assets/page1/wheat1.svg" />
                         <img id="wheat2" class="desk-layer" src="./assets/page1/wheat2.svg" />
                         <img id="leaf3" class="desk-layer" src="./assets/page1/leaf3.svg" />
@@ -317,11 +318,12 @@
 
             // desktop
             document.getElementById('l3').style.left = (scrolled * 0.01) + "vh";
-            document.getElementById('l2').style.left = -(scrolled * 0.014) + "vh";
-            document.getElementById('l1').style.left = -(scrolled * 0.01) + "vh";
+            document.getElementById('l2').style.left = -(scrolled * 0.04) + "vh";
+            document.getElementById('l1').style.left = -(scrolled * 0.03) + "vh";
 
             document.getElementById('wheat1').style.bottom = (scrolled * 0.03) + "vh";
             document.getElementById('wheat2').style.bottom = (scrolled * 0.02) + "vh";
+            document.getElementById('wheat3').style.left = -(scrolled * 0.01) + "vh";
 
             document.getElementById('leaf1').style.bottom = (scrolled * 0.02) + "vh";
             document.getElementById('leaf2').style.bottom = (scrolled * 0.03) + "vh";
