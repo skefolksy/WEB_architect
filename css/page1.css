@@ -262,34 +262,32 @@
 .mob-section-2 {
     background-color: #77a275;
     z-index: -2;
-    padding-top: 25vh;
-    padding-bottom: 15vh;
+    padding-top: 6vh;
+    padding-bottom: 5vh;
+    height: auto;
 }
 
 .mob-section-2 .mob-title {
-    color: #2e583c;
+    color: #FFF8DD;
     font-size: 3.5vh;
 }
 
 .mob-section-2 p {
     font-size: 2vh;
+    font-family: Itim;
 }
 
-.mob-scene-s2-wrap {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
 
 .mob-s2-layer {
     position: absolute;
     top: 0;
-    width: 90%;
+    width: 75%;
     object-fit: cover;
+    transform: translateX(-50%);
 }
 
 .mob-s2-b {
     position: absolute;
-    bottom: -20vh;
+    width: 100vw;
+    bottom: 0;
 }
