@@ -149,9 +149,9 @@
                 </div>
 
                 <div class="desk-section desk-section-2">
-                    <div class="container">
+                    <div class="container mb-5">
                         <div class="row">
-                            <div class="col-6 p-0 m-0">
+                            <div class="col-7 p-0 m-0">
                                 <div class="desk-scene-s2-wrap">
                                     <div id="sceneS2Desktop" class="w-100">
                                         <img id="s2-l4" class="desk-s2-layer" data-depth="0"
@@ -165,7 +165,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 p-5 text-white">
+                            <div class="col-5 p-5 text-white">
                                 <h1 class="desk-title mb-4">ประโยชน์ทฤษฎีใหม่</h1>
                                 <p>จากพระราชดำรัสของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช
                                     บรมนาถบพิตรที่ได้พระราชทานใน โอกาสต่าง ๆ นั้น
@@ -199,7 +199,7 @@
                     <div class="mob-scene">
                         <img id="m-wheat1" class="mob-layer" src="./assets/page1/m-wheat1.svg" />
                         <img id="m-wheat2" class="mob-layer" src="./assets/page1/m-wheat2.svg" />
-                        <img id="m-wheat2" class="mob-layer" src="./assets/page1/m-wheat3.svg" />
+                        <img id="m-wheat3" class="mob-layer" src="./assets/page1/m-wheat3.svg" />
                         <img id="m-leaf3" class="mob-layer" src="./assets/page1/m-leaf3.svg" />
                         <img id="m-leaf1" class="mob-layer" src="./assets/page1/m-leaf1.svg" />
                         <img id="m-leaf2" class="mob-layer" src="./assets/page1/m-leaf2.svg" />
@@ -276,12 +276,13 @@
                                     <div id="sceneS2Mobile">
                                         <img id="m-s2-l4" class="mob-s2-layer" data-depth="0"
                                             src="./assets/page1/s2-l4.svg" />
+                                        <img id="m-s2-l1" class="mob-s2-layer" data-depth="-0.1"
+                                            src="./assets/page1/s2-l1.svg" />
                                         <img id="m-s2-l3" class="mob-s2-layer" data-depth="0.1"
                                             src="./assets/page1/s2-l3.svg" />
                                         <img id="m-s2-l2" class="mob-s2-layer" data-depth="-0.2"
                                             src="./assets/page1/s2-l2.svg" />
-                                        <img id="m-s2-l1" class="mob-s2-layer" data-depth="-0.1"
-                                            src="./assets/page1/s2-l1.svg" />
+
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +339,13 @@
             document.getElementById('s2-l3').style.left = -(scrolled * 0.005) + "vh";
 
             // mobile
-            document.getElementById('m-')
+            document.getElementById('m-l3').style.left = (scrolled * 0.01) + "vh";
+            document.getElementById('m-l2').style.left = -(scrolled * 0.01) + "vh";
+            document.getElementById('m-l1').style.left = -(scrolled * 0.005) + "vh";
+
+            document.getElementById('m-wheat1').style.bottom = (scrolled * 0.02) -10 + "vh";
+            document.getElementById('m-wheat2').style.bottom = (scrolled * 0.01) -10 + "vh";
+            document.getElementById('m-wheat3').style.left = -(scrolled * 0.05) + "vh";
         };
     </script>
     <script>

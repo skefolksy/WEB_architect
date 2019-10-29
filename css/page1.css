@@ -1,3 +1,8 @@
+.content-wrap {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* desktop */
 
 .desk-main {
@@ -6,6 +11,7 @@
     width: 100vw;
     font-family: Itim;
     z-index: -99;
+    overflow-x: hidden;
 }
 
 .desk-scene {
@@ -106,7 +112,7 @@
 .desk-section-2 {
     background-color: #77a275;
     z-index: -2;
-    padding-top: 25vh;
+    padding-top: 10vh;
     padding-bottom: 15vh;
 }
 
@@ -135,6 +141,7 @@
 
 .desk-s2-b {
     position: absolute;
+    bottom: -10vh;
 }
 
 /* mobile css */
@@ -142,8 +149,10 @@
 .mob-main {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #fff8dd;
+    overflow-x: hidden;
+    z-index: -99;
 }
 
 .mob-layer {
