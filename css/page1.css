@@ -166,6 +166,10 @@
     color: white;
 }
 
+.mob-title {
+    font-family: Kanit;
+}
+
 .mob-content .mob-title {
     font-family: Kanit;
     font-size: 3vh;
@@ -187,7 +191,7 @@
 
 .mob-scene {
     position: absolute;
-    bottom: -25vh;
+    bottom: 0;
 }
 
 .mob-header-content {
@@ -237,21 +241,14 @@
 
 .mob-section-1 p {
     font-size: 2vh;
-    font-family: Itim; 
-}
-
-.mob-scene-s1-wrap {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-35%);
-    width: 100%;
-    
+    font-family: Itim;
 }
 
 .mob-s1-layer {
     position: absolute;
     top: 0;
-    width: 90%;
+    transform: translateX(-50%);
+    width: 75%;
     object-fit: cover;
 }
 
@@ -271,7 +268,7 @@
 
 .mob-section-2 .mob-title {
     color: #2e583c;
-    font-size: 4vh;
+    font-size: 3.5vh;
 }
 
 .mob-section-2 p {
@@ -296,4 +293,3 @@
     position: absolute;
     bottom: -20vh;
 }
-
