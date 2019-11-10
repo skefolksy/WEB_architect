@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/page1.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <title>Page1</title>
+    <title>รู้จักทฤษฎีใหม่</title>
 
 </head>
 
@@ -239,7 +239,7 @@
                                     <div id="sceneS1Mobile">
                                         <img id="m-s1-l4" class="mob-s1-layer" data-depth="0"
                                             src="./assets/page1/s1-l4.svg" />
-                                        <img id="m-s1-l3" class="mob-s1-layer" data-depth="0.1"
+                                        <img id="m-s1-l3" style="top:-5vh;" class="mob-s1-layer" data-depth="0.1"
                                             src="./assets/page1/s1-l3.svg" />
                                         <img id="m-s1-l2" class="mob-s1-layer" data-depth="-0.1"
                                             src="./assets/page1/s1-l2.svg" />
@@ -251,7 +251,7 @@
                         </div>
                     </div>
 
-                    <img class="desk-s1-b" src="./assets/page1/s1-b.svg" />
+                    <img class="mob-s1-b" src="./assets/page1/s1-b.svg" />
                 </div>
 
 
@@ -319,27 +319,27 @@
 
             // desktop
             document.getElementById('l3').style.left = (scrolled * 0.01) + "vh";
-            document.getElementById('l2').style.left = -(scrolled * 0.04) + "vh";
-            document.getElementById('l1').style.left = -(scrolled * 0.03) + "vh";
+            document.getElementById('l2').style.left = -(scrolled * 0.02) + "vh";
+            document.getElementById('l1').style.left = -(scrolled * 0.01) + "vh";
 
             document.getElementById('wheat1').style.bottom = (scrolled * 0.03) + "vh";
             document.getElementById('wheat2').style.bottom = (scrolled * 0.02) + "vh";
             document.getElementById('wheat3').style.left = -(scrolled * 0.01) + "vh";
 
-            document.getElementById('leaf1').style.bottom = (scrolled * 0.02) + "vh";
-            document.getElementById('leaf2').style.bottom = (scrolled * 0.03) + "vh";
-            document.getElementById('leaf3').style.bottom = (scrolled * 0.04) + "vh";
+            document.getElementById('leaf1').style.bottom = (scrolled * 0.02)-10 + "vh";
+            document.getElementById('leaf2').style.bottom = (scrolled * 0.025)-10 + "vh";
+            document.getElementById('leaf3').style.bottom = (scrolled * 0.01)-15 + "vh";
 
             document.getElementById('s1-l1').style.left = -(scrolled * 0.007) + "vh";
             document.getElementById('s1-l2').style.left = (scrolled * 0.003) + "vh";
-            document.getElementById('s1-l3').style.top = (scrolled * 0.003) + "vh";
+            document.getElementById('s1-l3').style.top = (scrolled * 0.01) + "vh";
 
             document.getElementById('s2-l1').style.top = -(scrolled * 0.004) + "vh";
             document.getElementById('s2-l2').style.left = (scrolled * 0.003) + "vh";
             document.getElementById('s2-l3').style.left = -(scrolled * 0.005) + "vh";
 
             // mobile
-            document.getElementById('m-l3').style.left = (scrolled * 0.01) + "vh";
+            document.getElementById('m-l3').style.left = (scrolled * 0.005) + "vh";
             document.getElementById('m-l2').style.left = -(scrolled * 0.01) + "vh";
             document.getElementById('m-l1').style.left = -(scrolled * 0.005) + "vh";
 
@@ -347,13 +347,13 @@
             document.getElementById('m-wheat2').style.bottom = (scrolled * 0.01) -10 + "vh";
             document.getElementById('m-wheat3').style.left = -(scrolled * 0.02) + "vh";
 
-            document.getElementById('m-leaf1').style.bottom = (scrolled * 0.02) -10 + "vh";
+            document.getElementById('m-leaf1').style.bottom = (scrolled * 0.005) -10 + "vh";
             document.getElementById('m-leaf2').style.bottom = (scrolled * 0.01) -10 + "vh";
-            document.getElementById('m-leaf3').style.bottom = (scrolled * 0.02) -10 + "vh";
+            document.getElementById('m-leaf3').style.bottom = (scrolled * 0.005) -13 + "vh";
 
             document.getElementById('m-s1-l1').style.left = -(scrolled * 0.005) + 50 + "%";
             document.getElementById('m-s1-l2').style.left = (scrolled * 0.005) + 50 + "%";
-            document.getElementById('m-s1-l3').style.top = (scrolled * 0.005) + "vh";
+            document.getElementById('m-s1-l3').style.top = (scrolled * 0.01) -5 + "vh";
 
             document.getElementById('m-s2-l1').style.top = -(scrolled * 0.004) + "vh";
             document.getElementById('m-s2-l2').style.left = (scrolled * 0.003) +50+ "%";
