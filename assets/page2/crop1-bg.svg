@@ -4,14 +4,11 @@
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFF8DD;}
-	.st1{fill:#CADDDA;}
-	.st2{fill:#275E85;}
 </style>
-<g id="Layer_2_1_">
+<g id="crop1-bg">
 	<g>
-		<rect x="9.8" y="19.4" class="st0" width="80.4" height="61.3"/>
-		<path class="st1" d="M87.5,65.3h-75l0.1-35.1c0,0,7.5,17.6,16.4,4.8s21.2,0,21.2,0s12,15.6,21.5,0s15.9,0,15.9,0L87.5,65.3z"/>
-		<path class="st2" d="M87.5,78.7h-75l0.1-35.1c0,0,7.5,17.6,16.4,4.8s21.2,0,21.2,0s12,15.6,21.5,0s15.9,0,15.9,0L87.5,78.7z"/>
+		<path class="st0" d="M77.6,82.2c0,0,1.1,17.7-24.8,17.8c-27.3,0.1-30.2-11.3-30.4-14.4C21.5,70.2,33.6,57,49.5,56
+			S76.7,66.8,77.6,82.2"/>
 	</g>
 </g>
 </svg>
