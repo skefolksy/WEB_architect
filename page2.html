@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <title>วิถีทฤษฎีใหม่</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <style>
@@ -133,17 +137,17 @@
                         </div>
 
                         <div class="row mt-4">
-                            <div class="col-4 text-center">
+                            <div class="col-md-12 col-lg-4 text-center">
                                 <img class="w-75" src="./assets/page2/icon1.svg">
                                 <p class="px-5 pt-2">มีการบริหารและจัดแบ่งที่ดินขนาดเล็กออกเป็นสัดส่วนที่ชัดเจน
                                     เพื่อประโยชน์สูงสุดของเกษตรกร</p>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-md-12 col-lg-4 text-center">
                                 <img class="w-75" src="./assets/page2/icon2.svg">
                                 <p class="px-5 pt-2">มีการคำนวณโดยหลักวิชาการ
                                     เกี่ยวกับปริมาณน้ำที่จะเก็บกักให้พอเพียงต่อการเพาะปลูกได้อย่างเหมาะสมตลอดปี</p>
                             </div>
-                            <div class="col-4 text-center">
+                            <div class="col-md-12 col-lg-4 text-center">
                                 <img class="w-75" src="./assets/page2/icon3.svg">
                                 <p class="px-5 pt-2">มีการวางแผนที่สมบูรณ์แบบ ประกอบด้วย 3 ขั้นตอน</p>
                             </div>
@@ -170,8 +174,10 @@
                                     <img class="desk-crop-layer" src="./assets/page2/crop1-bg.svg" alt="">
                                     <img class="desk-crop-layer" src="./assets/page2/crop1.svg" alt="">
                                 </div>
-
-                                <p class="px-5 pt-2">ขั้นที่ 1 เป็นการอผลิตแบบพึ่งตนเองด้วยวิธีง่ายๆ
+                                <p class="pt-2 text-center mb-2">
+                                    ขั้นที่ 1
+                                </p>
+                                <p>เป็นการอผลิตแบบพึ่งตนเองด้วยวิธีง่ายๆ
                                     ค่อยเป็นค่อยไปตามกำลัง พอมี พอกินไม่อดอยาก</p>
                             </div>
                             <div class="col-4">
@@ -179,9 +185,10 @@
                                     <img class="desk-crop-layer" src="./assets/page2/crop2-bg.svg" alt="">
                                     <img class="desk-crop-layer" src="./assets/page2/crop2.svg" alt="">
                                 </div>
-
-                                <p class="px-5 pt-2">ขั้นที่ 2
-                                    เกษตรกรรวมพลังกันในรูปกลุ่มหรือสหกรณ์ร่วมแรงในเรื่องของการผลิต การตลาด การเป็นอยู่
+                                <p class="pt-2 text-center mb-2">
+                                        ขั้นที่ 2
+                                    </p>
+                                <p>เกษตรกรรวมพลังกันในรูปกลุ่มหรือสหกรณ์ร่วมแรงในเรื่องของการผลิต การตลาด การเป็นอยู่
                                     สวัสดิการ การศึกษา สังคม และศาสนา</p>
 
                             </div>
@@ -190,26 +197,29 @@
                                     <img class="desk-crop-layer" src="./assets/page2/crop3-bg.svg" alt="">
                                     <img class="desk-crop-layer" src="./assets/page2/crop3.svg" alt="">
                                 </div>
-
-                                <p class="px-5 pt-2">ขั้นที่ 3 ร่วมมือกับแหล่งเงินและพลังงาน
+                                <p class="pt-2 text-center mb-2">
+                                        ขั้นที่ 3
+                                    </p>
+                                <p>ร่วมมือกับแหล่งเงินและพลังงาน
                                     ตั้งและบริการโรงสีตั้งและบริการร้านสหกรณ์ ช่วยกันลงทุน
                                     ช่วยกันพัฒนาคุณภาพชีวิตของประชาชนในชนบท ซึ่งมิใช่ทำอาชีพเกษตรเพียงอย่างเดียว</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="desk-benefit-section">
-                        <div class="row d-flex justify-content-center align-items-center" style="padding: 5em 25em;">
-                            <div class="col-6 text-center">
-                                <img class="rounded-circle w-75" src="./assets/page2/benefit-pic.jpg" alt="">
-                            </div>
+                        <div class="desk-benefit-section" style="margin-top: 10em;">
+                            <img class="desk-benefit-bg" src="./assets/page2/benefit-bg.svg">
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-md-12 col-lg-4 text-center">
+                                    <img class="rounded-circle w-75" src="./assets/page2/benefit-pic.jpg" alt="">
+                                </div>
 
-                            <div class="col-6 p-3">
-                                <h2>ประโยชน์การขุดสระน้ำ</h2>
-                                <p>การสร้างแหล่งน้ำ ถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
-                                    เนื่องด้วยความจำเป็นในหลายๆ ประการและ เตรียมพร้อมกับความแห้งแล้ง ในการกักเก็บน้ำ
-                                    เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
-                                    ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี</p>
+                                <div class="col-md-12 col-lg-6 p-3">
+                                    <h2>ประโยชน์การขุดสระน้ำ</h2>
+                                    <p>การสร้างแหล่งน้ำ ถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
+                                        เนื่องด้วยความจำเป็นในหลายๆ ประการและ เตรียมพร้อมกับความแห้งแล้ง ในการกักเก็บน้ำ
+                                        เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
+                                        ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,8 +254,18 @@
                 <div class="mob-section mob-section-1">
                     <div class="container">
                         <div class="row">
+                            <div class="col-12">
+                                <div class="col-6" style="height: 30px;">
+                                    <div class="desk-fish-scene">
+                                        <img id="m-fish4" class="desk-fish-layer" src="./assets/page2/s1-fish4.svg" />
+                                        <img id="m-fish3" class="desk-fish-layer" src="./assets/page2/s1-fish3.svg" />
+                                        <img id="m-fish2" class="desk-fish-layer" src="./assets/page2/s1-fish2.svg" />
+                                        <img id="m-fish1" class="desk-fish-layer" src="./assets/page2/s1-fish1.svg" />
+                                    </div>
+                                </div>
+                            </div>
 
-                            <div class="col-12 px-1 pt-1 text-white">
+                            <div class="col-12 px-1 pt-1 text-white mt-2">
                                 <h1 class="mob-title mb-4">เหตุที่เรียก "ทฤษฎีใหม่"</h1>
                             </div>
 
@@ -287,7 +307,7 @@
 
                                 <svg id="mymobSVG" style="z-index: -99;">
                                     <path fill="none" stroke="white" stroke-width="3" id="mobline"
-                                        d="M300 80 L370 80 L370 250 L100 250 L100 400 L120 400" />
+                                        d="M300 80 L370 80 L370 250 L100 250 L100 350 L120 350" />
                                 </svg>
                             </div>
 
@@ -295,21 +315,19 @@
                                 <p>มีการวางแผนที่สมบูรณ์แบบ<br>ประกอบด้วย 3 ขั้นตอน</p>
                             </div>
 
-                            <div class="col-12 px-5 pt-5 text-white mt-5">
-                                <h1 class="mob-title mob-reverse-animate pt-4 px-4" id="mob-title-animation">ขั้นตอนของทฤษฎีใหม่<br>การทำเกษตรทฤษฎีใหม่<br>มี 3 ขั้นตอน</h1>
+                            <div class="col-12 px-5 pt-3 text-white mt-5">
+                                <h1 class="mob-title mob-reverse-animate px-4" id="mob-title-animation">
+                                    ขั้นตอนของทฤษฎีใหม่<br>การทำเกษตรทฤษฎีใหม่<br>มี 3 ขั้นตอน</h1>
                             </div>
 
 
-
                             <div class="col-12 justify-content-center" style="height: 50vw;">
-
                                 <div id="sceneS2Mobile">
                                     <div class="mob-crop-wrap">
                                         <img class="mob-crop-layer" src="./assets/page2/mob-crop1-bg.svg" alt="">
                                         <img class="mob-crop-layer" src="./assets/page2/mob-crop1.svg" alt="">
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="col-12 px-5 pt-5 text-white">
@@ -346,25 +364,29 @@
                                     มิใช่ทำอาชีพเกษตรเพียงอย่างเดียว</p>
                             </div>
 
-                            <div class="col-12 d-flex justify-content-center"
-                                style="height: 50vw; margin-top: 30px;margin-bottom: 30px;">
-                                <img class="mob-s1-layer w-75" src="./assets/page2/mob-benefit-pic.png" alt="">
-                            </div>
+                            <div class="mob-benefit-section">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-6 text-center">
+                                        <img class="rounded-circle w-75" src="./assets/page2/benefit-pic.jpg" alt="">
+                                    </div>
 
-                            <div class="col-12 px-5 text-white">
-                                <h1 class="mob-title mb-4">ประโยชน์การขุดสระน้ำ</h1>
-                            </div>
-
-                            <div class="col-12 px-5 text-white">
-                                <p>การสร้างแหล่งน้ำ ถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
-                                    เนื่องด้วยความจำเป็นในหลายๆ ประการและ เตรียมพร้อมกับความแห้งแล้ง ในการกักเก็บน้ำ
-                                    เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
-                                    ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี
-                                </p>
+                                    <div class="col-12 p-2 px-5">
+                                        <h2 class="mob-title mb-2" style="color: #0F2B53;">ประโยชน์การขุดสระน้ำ</h2>
+                                        <p style="color: #275E85;">การสร้างแหล่งน้ำ
+                                            ถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
+                                            เนื่องด้วยความจำเป็นในหลายๆ ประการและ เตรียมพร้อมกับความแห้งแล้ง
+                                            ในการกักเก็บน้ำ
+                                            เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
+                                            ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
+
+                    <img class="mob-s1-b" src="./assets/page2/s1-b.svg" />
+
                 </div>
 
             </div>
@@ -399,6 +421,11 @@
             // mobile
             document.getElementById('m-l3').style.left = (scrolled * 0.009) + "vh";
             document.getElementById('m-l1').style.left = -(scrolled * 0.008) + "vh";
+
+            document.getElementById('m-fish1').style.left = -(scrolled * 0.006) + 25 + "vw";
+            document.getElementById('m-fish2').style.left = -(scrolled * 0.008) + 25 + "vw";
+            document.getElementById('m-fish3').style.left = -(scrolled * 0.004) + 25 + "vw";
+            document.getElementById('m-fish4').style.left = -(scrolled * 0.007) + 25 + "vw";
 
 
         };

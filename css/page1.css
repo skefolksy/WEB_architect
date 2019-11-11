@@ -200,7 +200,7 @@
 
 .mob-scene {
     position: absolute;
-    bottom: 0;
+    bottom: -5vw;
 }
 
 .mob-header-content {
