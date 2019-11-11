@@ -258,7 +258,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-0 text-white">
+                            <div class="col-12 px-5 pt-2 text-white">
                                 <p>มีการบริหารและจัดแบ่งที่ดินขนาดเล็กออกเป็นสัดส่วนที่ชัดเจน
                                     เพื่อประโยชน์สูงสุดของเกษตรกร</p>
                             </div>
@@ -272,7 +272,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-0 text-white">
+                            <div class="col-12 px-5 pt-2 text-white">
                                 <p>มีการคำนวณโดยหลักวิชาการ
                                     เกี่ยวกับปริมาณน้ำที่จะเก็บกักให้พอเพียงต่อการเพาะปลูกได้อย่างเหมาะสมตลอดปี</p>
                             </div>
@@ -291,12 +291,12 @@
                                 </svg>
                             </div>
 
-                            <div class="col-12 px-5 pt-0 text-white text-center">
-                                <p>มีการวางแผนที่สมบูรณ์แบบ<br>ประกอบด้วย 3 ขั้นตอน</p>
+                            <div class="col-12 px-5 pt-2 text-white">
+                                <p>มีการวางแผนที่สมบูรณ์แบบ ประกอบด้วย 3 ขั้นตอน</p>
                             </div>
 
-                            <div class="col-12 px-5 pt-5 text-white mt-5">
-                                <h1 class="mob-title mob-reverse-animate pt-4 px-4" id="mob-title-animation">ขั้นตอนของทฤษฎีใหม่<br>การทำเกษตรทฤษฎีใหม่<br>มี 3 ขั้นตอน</h1>
+                            <div class="col-12 px-5 pt-5 text-white">
+                                <h1 class="mob-title mob-reverse-animate mb-4" id="mob-title-animation">ขั้นตอนของทฤษฎีใหม่การทำเกษตรทฤษฎีใหม่มี 3 ขั้นตอน</h1>
                             </div>
 
 
@@ -458,7 +458,7 @@
 
         function mymobFunction() {
             let lineBcr = document.getElementById('mymobSVG').getBoundingClientRect();
-            var scrollpercent = Math.abs((lineBcr.height - lineBcr.y) / (lineBcr.y + lineBcr.top));
+            var scrollpercent = Math.abs((lineBcr.x - lineBcr.top) / (lineBcr.top));
             scrollpercent = Math.min(1, scrollpercent)
 
             if (scrollpercent == 1) {

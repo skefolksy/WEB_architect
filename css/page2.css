@@ -312,9 +312,62 @@ p {
     object-fit: cover;
 }
 
+.mob-animate {
+    animation: slide-left .3s forwards;
+}
+
+.mob-reverse-animate {
+    animation: slide-left .3s forwards reverse;
+}
+
+#mob-title-animation {
+    position: relative;
+    opacity: 0;
+    right: 20vw;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        right: 20vw !important;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+
+#mymobSVG {
+    position: relative;
+    top: 15%;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -25%;
+    z-index: -99;
+}
+
 .mob-s1-b {
     position: absolute;
     width: 100vw;
     bottom: -10vh;
     z-index: -1;
 }
+
+.mob-crop-wrap {
+    position: relative;
+    /* height: 270px; */
+}
+
+
+.mob-crop-layer {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
