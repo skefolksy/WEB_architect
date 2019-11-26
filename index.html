@@ -38,6 +38,11 @@
                     <div onclick="menuToggle()" id="menuWrap" class="desk-menu-wrap desk-bounce">
                         <button id="startBtn" class="desk-start-btn"
                             onclick="event.stopPropagation(); menuToggle()">Start</button>
+
+                        <a onclick="event.stopPropagation();" href="./index.html" class="desk-menu">
+                            <img src="./assets/home/menu1.svg" />
+                            <p>หน้าแรก</p>
+                        </a>
                         <a onclick="event.stopPropagation();" href="./page1.html" class="desk-menu">
                             <img src="./assets/home/menu1.svg" />
                             <p>รู้จักทฤษฎีใหม่</p>
@@ -46,82 +51,98 @@
                             <img src="./assets/home/menu2.svg" />
                             <p>วิถีทฤษฎีใหม่</p>
                         </a>
-                        <a onclick="event.stopPropagation();" href="./page3.html" class="desk-menu">
+                        <a onclick="event.stopPropagation();" href="./year5/4.html"
+                            class="desk-menu">
                             <img src="./assets/home/menu3.svg" />
                             <p>ทฤษฎีใหม่ขั้นต้น</p>
                         </a>
-                        <a onclick="event.stopPropagation();" href="./page4.html" class="desk-menu">
+                        <a onclick="event.stopPropagation();" href="./year5/5.html"
+                            class="desk-menu">
                             <img src="./assets/home/menu4.svg" />
                             <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
                         </a>
-                        <a onclick="event.stopPropagation();" href="./page5.html" class="desk-menu">
+                        <a onclick="event.stopPropagation();" href="./year5/6.html" class="desk-menu">
                             <img src="./assets/home/menu5.svg" />
                             <p>ฝากให้รู้ไว้</p>
                         </a>
-                        <a onclick="event.stopPropagation();" href="./page6.html" class="desk-menu">
+                        <a onclick="event.stopPropagation();" href="./year5/7.html"
+                            class="desk-menu">
                             <img src="./assets/home/menu6.svg" />
                             <p>หน่วยงานให้คำปรึกษา</p>
                         </a>
                     </div>
                 </div>
             </div>
+
+            <div class="footer">
+                <p class="text-center">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
+                    คณะสถาปัตยกรรมศาสตร์
+                    และการโปรแกรมและสื่อประสม แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ
+                    สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019</p>
+            </div>
+
         </div>
         <!-- end desktop -->
 
         <!-- mobile -->
         <div class="d-md-none d-sm-block">
             <div class="mob-home">
-                <!-- navbar -->
-                <nav class="navbar navbar-expand-lg" id="navbar">
-                    <div onclick="openMenu()" id="hamburger"
-                        class="ml-auto d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
-                        <span class="nav-hamburger-box">
-                            <span class="nav-hamburger-inner"></span>
-                        </span>
-                    </div>
-
-                    <div id="menuMobile" class="nav-hide-menu">
-                        <div id="menuWrap" class="nav-menu-wrap nav-bounce">
-                            <a href="./page1.html" class="nav-menu">
-                                <img src="./assets/home/menu1.svg" />
-                                <p>รู้จักทฤษฎีใหม่</p>
-                            </a>
-                            <a href="./page2.html" class="nav-menu">
-                                <img src="./assets/home/menu2.svg" />
-                                <p>วิถีทฤษฎีใหม่</p>
-                            </a>
-                            <a href="./page3.html" class="nav-menu">
-                                <img src="./assets/home/menu3.svg" />
-                                <p>ทฤษฎีใหม่ขั้นต้น</p>
-                            </a>
-                            <a href="./page4.html" class="nav-menu">
-                                <img src="./assets/home/menu4.svg" />
-                                <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
-                            </a>
-                            <a href="./page5.html" class="nav-menu">
-                                <img src="./assets/home/menu5.svg" />
-                                <p>ฝากให้รู้ไว้</p>
-                            </a>
-                            <a href="./page6.html" class="nav-menu">
-                                <img src="./assets/home/menu6.svg" />
-                                <p>หน่วยงานให้คำปรึกษา</p>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-                <!-- end navbar -->
 
                 <div id="sceneMobile">
                     <img id="m-bg" class="mob-layer" src="./assets/home/m-bg.svg" />
                 </div>
                 <div class="mob-filter"></div>
 
-                <div class="mob-content">
+                <div class="mob-content" id="mob-content">
                     <img class="mb-3" src="./assets/logo-bd.svg" style="height: 25vh;" />
                     <p class="mob-title">“ทฤษฎีใหม่.....ยืดหยุ่นได้และต้องยืดหยุ่น</p>
                     <p class="mob-title mb-3">เหมือนชีวิตของเราทุกคนต้องมียืดหยุ่น”</p>
                     <p class="mob-sub-title">พระราชดำรัสเมื่อวันที่ 14 กรกฎาคม 2541</p>
                 </div>
+
+                <div onclick="mob_menuToggle()" id="mob-menuWrap" class="mob-menu-wrap mob-bounce">
+                    <button id="mob-startBtn" class="mob-start-btn"
+                        onclick="event.stopPropagation(); mob_menuToggle()">Start</button>
+
+                    <a onclick="event.stopPropagation();" href="./index.html" class="mob-menu">
+                        <img src="./assets/home/menu1.svg" />
+                        <p>หน้าแรก</p>
+                    </a>
+                    <a onclick="event.stopPropagation();" href="./page1.html" class="mob-menu">
+                        <img src="./assets/home/menu1.svg" />
+                        <p>รู้จักทฤษฎีใหม่</p>
+                    </a>
+                    <a onclick="event.stopPropagation();" href="./page2.html" class="mob-menu">
+                        <img src="./assets/home/menu2.svg" />
+                        <p>วิถีทฤษฎีใหม่</p>
+                    </a>
+                    <a onclick="event.stopPropagation();" href="./year5/4.html"
+                        class="mob-menu">
+                        <img src="./assets/home/menu3.svg" />
+                        <p>ทฤษฎีใหม่ขั้นต้น</p>
+                    </a>
+                    <a onclick="event.stopPropagation();" href="./year5/5.html"
+                        class="mob-menu">
+                        <img src="./assets/home/menu4.svg" />
+                        <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+                    </a>
+                    <a onclick="event.stopPropagation();" href="./year5/6.html" class="mob-menu">
+                        <img src="./assets/home/menu5.svg" />
+                        <p>ฝากให้รู้ไว้</p>
+                    </a>
+                    <a onclick="event.stopPropagation();" href="./year5/7.html"
+                        class="mob-menu">
+                        <img src="./assets/home/menu6.svg" />
+                        <p>หน่วยงานให้คำปรึกษา</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mob-footer">
+                <p class="text-center">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
+                    คณะสถาปัตยกรรมศาสตร์
+                    และการโปรแกรมและสื่อประสม <br>แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ
+                    สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019</p>
             </div>
         </div>
         <!-- end mobile -->
@@ -140,6 +161,13 @@
             document.getElementById("menuWrap").classList.toggle("desk-bounce");
             document.getElementById("content").classList.toggle("desk-hide-content");
             document.getElementById("startBtn").classList.toggle("desk-hide-content");
+        }
+
+        function mob_menuToggle() {
+            document.getElementById("mob-menuWrap").classList.toggle("mob-show-menu");
+            document.getElementById("mob-menuWrap").classList.toggle("mob-bounce");
+            document.getElementById("mob-content").classList.toggle("mob-hide-content");
+            document.getElementById("mob-startBtn").classList.toggle("mob-hide-content");
         }
     </script>
 </body>

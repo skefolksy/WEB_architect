@@ -24,20 +24,19 @@
     }
 
     .nav-item-p2:hover {
-        color: #76a075;
+        color: #315e83;
     }
 
     .nav-active-p2,
     .nav-active-p2:hover {
-        color: #f3b744;
+        color: #315e83;
     }
 </style>
 
 <body>
     <!-- navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg">
-        <a href="./index.html" class="navbar-brand">
-            <img class="nav-logo" src="./assets/logo.svg" />
+        <a class="navbar-brand">
         </a>
 
         <div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
@@ -48,6 +47,9 @@
 
         <div class="navbar-collapse d-none d-lg-block">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link">หน้าแรก</a>
+                </li>
                 <li class="nav-item-p2">
                     <a href="./page1.html" class="nav-link">รู้จักทฤษฎีใหม่</a>
                 </li>
@@ -55,22 +57,26 @@
                     <a href="./page2.html" class="nav-link">วิถีทฤษฎีใหม่</a>
                 </li>
                 <li class="nav-item-p2">
-                    <a href="./page3.html" class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
+                    <a href="./year5/4.html" class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
                 </li>
                 <li class="nav-item-p2">
-                    <a href="./page4.html" class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
+                    <a href="./year5/5.html" class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
                 </li>
                 <li class="nav-item-p2">
-                    <a href="./page5.html" class="nav-link">ฝากให้รู้ไว้</a>
+                    <a href="./year5/6.html" class="nav-link">ฝากให้รู้ไว้</a>
                 </li>
                 <li class="nav-item-p2">
-                    <a href="./page6.html" class="nav-link">หน่วยงานให้คำปรึกษา</a>
+                    <a href="./year5/7.html" class="nav-link">หน่วยงานให้คำปรึกษา</a>
                 </li>
             </ul>
         </div>
 
         <div id="menuMobile" class="nav-hide-menu">
             <div id="menuWrap" class="nav-menu-wrap nav-bounce">
+                <a href="./index.html" class="nav-menu">
+                    <img src="./assets/home/menu1.svg" />
+                    <p>หน้าแรก</p>
+                </a>
                 <a href="./page1.html" class="nav-menu">
                     <img src="./assets/home/menu1.svg" />
                     <p>รู้จักทฤษฎีใหม่</p>
@@ -79,19 +85,19 @@
                     <img src="./assets/home/menu2.svg" />
                     <p>วิถีทฤษฎีใหม่</p>
                 </a>
-                <a href="./page3.html" class="nav-menu">
+                <a href="./year5/4.html" class="nav-menu">
                     <img src="./assets/home/menu3.svg" />
                     <p>ทฤษฎีใหม่ขั้นต้น</p>
                 </a>
-                <a href="./page4.html" class="nav-menu">
+                <a href="./year5/5.html" class="nav-menu">
                     <img src="./assets/home/menu4.svg" />
                     <p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
                 </a>
-                <a href="./page5.html" class="nav-menu">
+                <a href="./year5/6.html" class="nav-menu">
                     <img src="./assets/home/menu5.svg" />
                     <p>ฝากให้รู้ไว้</p>
                 </a>
-                <a href="./page6.html" class="nav-menu">
+                <a href="./year5/7.html" class="nav-menu">
                     <img src="./assets/home/menu6.svg" />
                     <p>หน่วยงานให้คำปรึกษา</p>
                 </a>
@@ -115,7 +121,7 @@
                     <div class="desk-header-content">
                         <h1 class="desk-title">วิถีทฤษฎีใหม่</h1>
                         <p>หลักการสำคัญของทฤษฎีใหม่
-                            คือการบริหารจัดการทรัพยากรโดยเฉพาะดินและน้ำที่มีอยู่จำกัดให้เกิด<br>ประโยชน์สูงสุด
+                            คือการบริหารจัดการทรัพยากรโดยเฉพาะดินและน้ำที่มีอยู่จำกัดให้เกิดประโยชน์สูงสุด
                             เพื่อให้เกษตรกรสามารถดำเนินชีวิตอยู่ได้อย่างพอเพียง โดยเน้นการพึ่งพาตนเองให้มากที่สุด </p>
                     </div>
                 </div>
@@ -123,10 +129,10 @@
                 <div class="desk-section desk-section-1">
                     <div class="container" style="padding: 0 7em;">
                         <div class="row">
-                            <div class="col-6">
-                                <h2>เหตุที่เรียก "ทฤษฎีใหม่"</h2>
+                            <div class="col-7">
+                                <h2 class="desk-title">เหตุที่เรียก "ทฤษฎีใหม่"</h2>
                             </div>
-                            <div class="col-6" style="height: 120px;">
+                            <div class="col-5" style="height: 120px;">
                                 <div class="desk-fish-scene">
                                     <img id="fish4" class="desk-fish-layer" src="./assets/page2/s1-fish4.svg" />
                                     <img id="fish3" class="desk-fish-layer" src="./assets/page2/s1-fish3.svg" />
@@ -149,14 +155,14 @@
                             </div>
                             <div class="col-md-12 col-lg-4 text-center">
                                 <img class="w-75" src="./assets/page2/icon3.svg">
-                                <p class="px-5 pt-2">มีการวางแผนที่สมบูรณ์แบบ ประกอบด้วย 3 ขั้นตอน</p>
+                                <p class="px-5 pt-2">มีการวางแผนที่สมบูรณ์แบบ ประกอบด้วย <br>3 ขั้นตอน</p>
                             </div>
                         </div>
 
                         <div class="row d-flex justify-content-center align-items-end">
                             <div class="col-7">
-                                <h2 id="title-animation" class="reverse-animate">
-                                    ขั้นตอนของทฤษฎีใหม่การทำเกษตรทฤษฎีใหม่มี 3 ขั้นตอน
+                                <h2 id="title-animation" class="desk-title text-center reverse-animate">
+                                    การทำเกษตรทฤษฎีใหม่<br>มี 3 ขั้นตอน
                                 </h2>
                             </div>
 
@@ -172,7 +178,8 @@
                             <div class="col-4">
                                 <div class="desk-crop-wrap">
                                     <img class="desk-crop-layer" src="./assets/page2/crop1-bg.svg" alt="">
-                                    <img class="desk-crop-layer" src="./assets/page2/crop1.svg" alt="">
+                                    <img id="desk-crop1" class="crop-pop-up reverse-pop-up"
+                                        src="./assets/page2/crop1.svg" alt="">
                                 </div>
                                 <p class="pt-2 text-center mb-2">
                                     ขั้นที่ 1
@@ -183,11 +190,12 @@
                             <div class="col-4">
                                 <div class="desk-crop-wrap">
                                     <img class="desk-crop-layer" src="./assets/page2/crop2-bg.svg" alt="">
-                                    <img class="desk-crop-layer" src="./assets/page2/crop2.svg" alt="">
+                                    <img id="desk-crop2" class="crop-pop-up reverse-pop-up"
+                                        src="./assets/page2/crop2.svg" alt="">
                                 </div>
                                 <p class="pt-2 text-center mb-2">
-                                        ขั้นที่ 2
-                                    </p>
+                                    ขั้นที่ 2
+                                </p>
                                 <p>เกษตรกรรวมพลังกันในรูปกลุ่มหรือสหกรณ์ร่วมแรงในเรื่องของการผลิต การตลาด การเป็นอยู่
                                     สวัสดิการ การศึกษา สังคม และศาสนา</p>
 
@@ -195,31 +203,33 @@
                             <div class="col-4">
                                 <div class="desk-crop-wrap">
                                     <img class="desk-crop-layer" src="./assets/page2/crop3-bg.svg" alt="">
-                                    <img class="desk-crop-layer" src="./assets/page2/crop3.svg" alt="">
+                                    <img id="desk-crop3" class="crop-pop-up reverse-pop-up"
+                                        src="./assets/page2/crop3.svg" alt="">
                                 </div>
                                 <p class="pt-2 text-center mb-2">
-                                        ขั้นที่ 3
-                                    </p>
+                                    ขั้นที่ 3
+                                </p>
                                 <p>ร่วมมือกับแหล่งเงินและพลังงาน
-                                    ตั้งและบริการโรงสีตั้งและบริการร้านสหกรณ์ ช่วยกันลงทุน
-                                    ช่วยกันพัฒนาคุณภาพชีวิตของประชาชนในชนบท ซึ่งมิใช่ทำอาชีพเกษตรเพียงอย่างเดียว</p>
+                                    &nbsp;และบริการโรงสีและบริการร้านสหกรณ์ช่วยกันลงทุน
+                                    ช่วยกันพัฒนาคุณภาพชีวิตของประชาชน  ในชนบทซึ่งมิใช่ทำอาชีพเกษตรกรเพียงอย่างเดียว</p>
                             </div>
                         </div>
 
-                        <div class="desk-benefit-section" style="margin-top: 10em;">
-                            <img class="desk-benefit-bg" src="./assets/page2/benefit-bg.svg">
-                            <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-md-12 col-lg-4 text-center">
-                                    <img class="rounded-circle w-75" src="./assets/page2/benefit-pic.jpg" alt="">
-                                </div>
+                    </div>
 
-                                <div class="col-md-12 col-lg-6 p-3">
-                                    <h2>ประโยชน์การขุดสระน้ำ</h2>
-                                    <p>การสร้างแหล่งน้ำ ถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
-                                        เนื่องด้วยความจำเป็นในหลายๆ ประการและ เตรียมพร้อมกับความแห้งแล้ง ในการกักเก็บน้ำ
-                                        เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
-                                        ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี</p>
-                                </div>
+                    <div class="desk-benefit-section" style="margin-top: 10em;">
+                        <div class="row desk-benefit-content">
+                            <div class="col-md-12 col-lg-4 text-center">
+                                <img class="rounded-circle w-75" src="./assets/page2/pool.svg" alt="">
+                            </div>
+
+                            <div class="col-md-12 col-lg-4 p-3">
+                                <h2 class="text-left">ประโยชน์ของการขุดสระน้ำ</h2>
+                                <p class="text-left">
+                                    การสร้างแหล่งน้ำถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
+                                    เนื่องด้วยความจำเป็นในหลายๆ ประการและเตรียมพร้อมกับความแห้งแล้งในการกักเก็บน้ำ
+                                    เพื่อใช้ในด้านการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
+                                    ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี</p>
                             </div>
                         </div>
                     </div>
@@ -227,6 +237,13 @@
                     <img src="./assets/page2/s1-b.svg" alt="">
                 </div>
 
+            </div>
+
+            <div class="footer">
+                <p class="text-center">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
+                    คณะสถาปัตยกรรมศาสตร์
+                    และการโปรแกรมและสื่อประสม แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ
+                    สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019</p>
             </div>
         </div>
         <!-- end desktop -->
@@ -245,7 +262,7 @@
                     <div class="mob-header-content">
                         <h1 class="mob-title">วิถีทฤษฎีใหม่</h1>
                         <p>หลักการสำคัญของทฤษฎีใหม่
-                            คือการบริหารจัดการทรัพยากรโดยเฉพาะดินและน้ำที่มีอยู่จำกัดให้เกิด<br>ประโยชน์สูงสุด
+                            คือการบริหารจัดการทรัพยากรโดยเฉพาะดินและน้ำที่มีอยู่จำกัดให้เกิดประโยชน์สูงสุด
                             เพื่อให้เกษตรกรสามารถดำเนินชีวิตอยู่ได้อย่างพอเพียง โดยเน้นการพึ่งพาตนเองให้มากที่สุด</p>
                     </div>
                 </div>
@@ -265,7 +282,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 px-1 pt-1 text-white mt-2">
+                            <div class="col-12 px-1 pt-1 mt-2">
                                 <h1 class="mob-title mb-4">เหตุที่เรียก "ทฤษฎีใหม่"</h1>
                             </div>
 
@@ -278,7 +295,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-0 text-white">
+                            <div class="col-12 px-5 pt-0 mob-content-text">
                                 <p>มีการบริหารและจัดแบ่งที่ดินขนาดเล็กออกเป็นสัดส่วนที่ชัดเจน
                                     เพื่อประโยชน์สูงสุดของเกษตรกร</p>
                             </div>
@@ -292,7 +309,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-0 text-white">
+                            <div class="col-12 px-5 pt-0 mob-content-text">
                                 <p>มีการคำนวณโดยหลักวิชาการ
                                     เกี่ยวกับปริมาณน้ำที่จะเก็บกักให้พอเพียงต่อการเพาะปลูกได้อย่างเหมาะสมตลอดปี</p>
                             </div>
@@ -311,13 +328,13 @@
                                 </svg>
                             </div>
 
-                            <div class="col-12 px-5 pt-0 text-white text-center">
+                            <div class="col-12 px-5 pt-0 mob-content-text text-center">
                                 <p>มีการวางแผนที่สมบูรณ์แบบ<br>ประกอบด้วย 3 ขั้นตอน</p>
                             </div>
 
-                            <div class="col-12 px-5 pt-3 text-white mt-5">
+                            <div class="col-12 px-5 pt-3 mob-content-text mt-5">
                                 <h1 class="mob-title mob-reverse-animate px-4" id="mob-title-animation">
-                                    ขั้นตอนของทฤษฎีใหม่<br>การทำเกษตรทฤษฎีใหม่<br>มี 3 ขั้นตอน</h1>
+                                    การทำเกษตรทฤษฎีใหม่<br>มี 3 ขั้นตอน</h1>
                             </div>
 
 
@@ -325,12 +342,13 @@
                                 <div id="sceneS2Mobile">
                                     <div class="mob-crop-wrap">
                                         <img class="mob-crop-layer" src="./assets/page2/mob-crop1-bg.svg" alt="">
-                                        <img class="mob-crop-layer" src="./assets/page2/mob-crop1.svg" alt="">
+                                        <img id="m-crop1" class="mob-crop-pop-up reverse-pop-up"
+                                            src="./assets/page2/mob-crop1.svg" alt="">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-5 text-white">
+                            <div class="col-12 px-5 pt-5 mob-content-text">
                                 <p>ขั้นที่ 1 เป็นการผลิตแบบพึ่งตนเองด้วยวิธีง่ายๆ ค่อยเป็นค่อยไปตามกำลัง พอมี
                                     พอกินไม่อดอยาก </p>
                             </div>
@@ -339,12 +357,13 @@
                                 <div id="sceneS2Mobile">
                                     <div class="mob-crop-wrap">
                                         <img class="mob-crop-layer" src="./assets/page2/mob-crop2-bg.svg" alt="">
-                                        <img class="mob-crop-layer" src="./assets/page2/mob-crop2.svg" alt="">
+                                        <img id="m-crop2" class="mob-crop-pop-up reverse-pop-up"
+                                            src="./assets/page2/mob-crop2.svg" alt="">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-5 text-white">
+                            <div class="col-12 px-5 pt-5 mob-content-text">
                                 <p>ขั้นที่ 2 เกษตรกรรวมพลังกันในรูปกลุ่มหรือสหกรณ์ ร่วมแรงในเรื่องของการผลิต การตลาด
                                     การเป็นอยู่ สวัสดิการ การศึกษา สังคม และศาสนา </p>
                             </div>
@@ -353,30 +372,30 @@
                                 <div id="sceneS2Mobile">
                                     <div class="mob-crop-wrap">
                                         <img class="mob-crop-layer" src="./assets/page2/mob-crop3-bg.svg" alt="">
-                                        <img class="mob-crop-layer" src="./assets/page2/mob-crop3.svg" alt="">
+                                        <img id="m-crop3" class="mob-crop-pop-up reverse-pop-up"
+                                            src="./assets/page2/mob-crop3.svg" alt="">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-12 px-5 pt-5 text-white">
-                                <p>ขั้นที่ 3 ร่วมมือกับแหล่งเงินและพลังงาน ตั้งและบริการโรงสีตั้งและบริการ ร้านสหกรณ์
-                                    ช่วยกันลงทุน ช่วยกันพัฒนาคุณภาพชีวิตของประชาชนในชนบท ซึ่ง
-                                    มิใช่ทำอาชีพเกษตรเพียงอย่างเดียว</p>
+                            <div class="col-12 px-5 pt-5 mob-content-text">
+                                <p>ขั้นที่ 3 ร่วมมือกับแหล่งเงินและพลังงาน <br>และบริการโรงสีและบริการ ร้านสหกรณ์
+                                    และช่วยกันลงทุน ช่วยกันพัฒนาคุณภาพชีวิตของประชาชนในชนบท ซึ่งมิใช่ทำอาชีพเกษตรเพียงอย่างเดียว</p>
                             </div>
 
                             <div class="mob-benefit-section">
                                 <div class="row d-flex justify-content-center">
-                                    <div class="col-6 text-center">
-                                        <img class="rounded-circle w-75" src="./assets/page2/benefit-pic.jpg" alt="">
+                                    <h2 class="mob-title mb-5" style="color: #fdf8e1;">ประโยชน์การขุดสระน้ำ</h2>
+                                    <div class="col-8 text-center">
+                                        <img class="rounded-circle w-75" src="./assets/page2/pool.svg" alt="">
                                     </div>
 
-                                    <div class="col-12 p-2 px-5">
-                                        <h2 class="mob-title mb-2" style="color: #0F2B53;">ประโยชน์การขุดสระน้ำ</h2>
-                                        <p style="color: #275E85;">การสร้างแหล่งน้ำ
+                                    <div class="col-12 p-5 px-5">
+                                        <p style="color: #fdf8e1;">การสร้างแหล่งน้ำ
                                             ถือเป็นการสร้างหลักประกันให้กับเกษตรกรได้เป็นอย่างดี
                                             เนื่องด้วยความจำเป็นในหลายๆ ประการและ เตรียมพร้อมกับความแห้งแล้ง
                                             ในการกักเก็บน้ำ
-                                            เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและนำมาอุปโภคบริโภคได้
+                                            เพื่อใช้ในการเกษตรและการบริโภคนอกจากนี้ยังใช้เลี้ยงสัตว์น้ำและสามารถนำมาอุปโภคบริโภคได้
                                             ซึ่งทำให้เราสามารถทำการเกษตรได้ทั้งปี</p>
                                     </div>
                                 </div>
@@ -390,6 +409,15 @@
                 </div>
 
             </div>
+
+
+            <div class="mob-footer">
+                <p class="text-center">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
+                    คณะสถาปัตยกรรมศาสตร์
+                    และการโปรแกรมและสื่อประสม <br>แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ
+                    สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019</p>
+            </div>
+
         </div>
         <!-- end mobile -->
     </div>
@@ -452,14 +480,37 @@
 
             if (scrollpercent == 1) {
                 document.getElementById('title-animation').classList.remove('reverse-animate')
+                document.getElementById('desk-crop1').classList.remove('reverse-pop-up')
+                document.getElementById('desk-crop2').classList.remove('reverse-pop-up')
+                document.getElementById('desk-crop3').classList.remove('reverse-pop-up')
                 setTimeout(() => {
                     document.getElementById('title-animation').classList.add('animate')
                 }, 1);
+
+                setTimeout(() => {
+                    document.getElementById('desk-crop1').classList.add('pop-up')
+                }, 200);
+                setTimeout(() => {
+                    document.getElementById('desk-crop2').classList.add('pop-up')
+                }, 400);
+                setTimeout(() => {
+                    document.getElementById('desk-crop3').classList.add('pop-up')
+                }, 600);
+
+
             } else {
                 document.getElementById('title-animation').classList.remove('animate')
+                document.getElementById('desk-crop1').classList.remove('pop-up')
+                document.getElementById('desk-crop2').classList.remove('pop-up')
+                document.getElementById('desk-crop3').classList.remove('pop-up')
                 setTimeout(() => {
                     document.getElementById('title-animation').classList.add('reverse-animate')
+                    document.getElementById('desk-crop1').classList.add('reverse-pop-up')
+                    document.getElementById('desk-crop2').classList.add('reverse-pop-up')
+                    document.getElementById('desk-crop3').classList.add('reverse-pop-up')
                 }, 1);
+
+
             }
 
             var draw = length * scrollpercent;
@@ -490,13 +541,33 @@
 
             if (scrollpercent == 1) {
                 document.getElementById('mob-title-animation').classList.remove('mob-reverse-animate')
+                document.getElementById('m-crop1').classList.remove('reverse-pop-up')
+                document.getElementById('m-crop2').classList.remove('reverse-pop-up')
+                document.getElementById('m-crop3').classList.remove('reverse-pop-up')
                 setTimeout(() => {
                     document.getElementById('mob-title-animation').classList.add('mob-animate')
                 }, 1);
+
+                setTimeout(() => {
+                    document.getElementById('m-crop1').classList.add('pop-up')
+                }, 200);
+                setTimeout(() => {
+                    document.getElementById('m-crop2').classList.add('pop-up')
+                }, 400);
+                setTimeout(() => {
+                    document.getElementById('m-crop3').classList.add('pop-up')
+                }, 600);
+
             } else {
                 document.getElementById('mob-title-animation').classList.remove('mob-animate')
+                document.getElementById('m-crop1').classList.remove('pop-up')
+                document.getElementById('m-crop2').classList.remove('pop-up')
+                document.getElementById('m-crop3').classList.remove('pop-up')
                 setTimeout(() => {
                     document.getElementById('mob-title-animation').classList.add('mob-reverse-animate')
+                    document.getElementById('m-crop1').classList.add('reverse-pop-up')
+                    document.getElementById('m-crop2').classList.add('reverse-pop-up')
+                    document.getElementById('m-crop3').classList.add('reverse-pop-up')
                 }, 1);
             }
 

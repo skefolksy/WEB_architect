@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Kanit;
-    src: url('../assets/fonts/Kanit-Regular.ttf');
+    font-family: Paethai;
+    src: url('../assets/fonts/MN-Paethai.ttf');
 }
 
 @font-face {
@@ -8,20 +8,35 @@
     src: url('../assets/fonts/Itim-Regular.ttf');
 }
 
-a, a:hover, a:active {
-    color:unset
+
+a,
+a:hover,
+a:active {
+    color: unset
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     z-index: 99;
+    background-image: url("../assets/navmenu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 15vh;
+}
+
+@media only screen and (max-width: 420px) {
+    .navbar {
+        width: 120vw;
+        left: -18%;
+    }
 }
 
 .nav-item {
     font-family: Itim;
-    color: #285e85;
+    color: #4d4034;
     cursor: pointer;
 }
 
