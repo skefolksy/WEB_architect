@@ -5,138 +5,290 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="ทฤษฎีใหม่ขั้นต้น.css">
-
+	<link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/page1.css"> -->
 </head>
 <body>
-	<div class="wrapper">
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<a class="navbar-brand">
+		</a>
+		<div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
+				<span class="nav-hamburger-box">
+					<span class="nav-hamburger-inner"></span>
+				</span>
+		</div>
 
-		<div class="desk">
-
-			<div class="imag">
-
-				<img src="Page4/1.svg" class="imag1" id="bg">
-				<img src="Page4/4.svg" class="imag1" id="gr">
-				<img src="Page4/5.svg" class="imag1" id="gr2">
-				<img src="Page4/6.svg" class="imag1" id="gr3">
-				<img src="Page4/7.svg" class="imag1" id="tree">
-				<img src="Page4/8.svg" class="imag1" id="tree2">
-				<img src="Page4/9.svg" class="imag1" id="tree3">
-				<img src="Page4/10.svg" class="imag1" id="tree4">
-				<img src="Page4/11.svg" class="imag1" id="gl">
-				<img src="Page4/13.svg" class="imag1" id="gl2">
-				<img src="Page4/11.svg" class="imag1" id="gl3">
-				<img src="Page4/14.svg" class="imag1" id="gl4">
-				<img src="Page4/15.svg" class="imag1" id="bana">
-				<img src="Page4/16.svg" class="imag1" id="bana2">
-				<img src="Page4/17.svg" class="imag1" id="bana3">
-				<img src="Page4/18.svg" class="imag1" id="gl5">
-				<img src="Page4/19.svg" class="imag1" id="gl6">
-				<img src="Page4/20.svg" class="imag1" id="gl7">
-				<img src="Page4/21.svg" class="imag1" id="oni">
-				<img src="Page4/22.svg" class="imag1" id="oni2">
-				<img src="Page4/23.svg" class="imag1" id="oni3">
-				<img src="Page4/24.svg" class="imag1" id="oni4">
-				<img src="Page4/25.svg" class="imag1" id="cab">
-				<img src="Page4/26.svg" class="imag1" id="cab2">
-				<img src="Page4/27.svg" class="imag1" id="cab3">
-				<img src="Page4/28.svg" class="imag1" id="cab4">
-				<img src="Page4/29.svg" class="imag1" id="cab5">
-				<img src="Page4/0.1 new logo.svg" class="imag1" id="icon">
-				<img src="Page4/new 31-02.svg" class="imag1" id="text1">
-				<img src="Page4/newnew 32-03.svg" class="imag1" id="text2">
-				<img src="Page4/39.svg" class="imag1" id="gl10">
-				<img src="Page4/2.svg" class="imag1" id="bg2">
-				<img src="Page4/40.svg" class="imag1" id="cir" usemap="#circle">
-				<img src="Page4/newnew 41-04.svg" class="imag1" id="text3">
-				<img src="Page4/42.svg" class="imag1" id="bcir">
-				<img src="Page4/new 43-05.svg" class="imag1" id="text4">
-				<img src="Page4/44.svg" class="imag1" id="bcir2">
-				<img src="Page4/new 45-06.svg" class="imag1" id="text5">
-				<img src="Page4/46.svg" class="imag1" id="bcir3">
-				<img src="Page4/new 47-07.svg" class="imag1" id="text6">
-				<img src="Page4/48.svg" class="imag1" id="bcir4">
-				<img src="Page4/new 49-08.svg" class="imag1" id="text7">
-				<img src="Page4/3.svg" class="imag1" id="bot">
-				<img src="Page4/Footer finalllll-02.svg" class="imag1" id="foot">
-				<img src="Page4/hand.svg" class="imag1" id="hand">
-
-
-			</div>
-
-			<div class="goto">
-				<ul>
-					<li><a href="../index.html">หน้าแรก</a></li>
-					<li><a href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-					<li><a href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-					<li><a href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-					<li><a href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-					<li><a href="6.html">ฝากให้รู้ไว้</a></li>
-					<li><a href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li>
+		<div class="navbar-collapse d-none d-lg-block">
+				<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a id="home" href="../index.html" class="nav-link">หน้าแรก</a>
+						</li>
+						<li class="nav-item nav-active">
+							<a id="head1" href="../page1.html" class="nav-link">รู้จักทฤษฎีใหม่</a>
+						</li>
+						<li class="nav-item">
+							<a id="head2" href="../page2.html" class="nav-link">วิถีทฤษฎีใหม่</a>
+						</li>
+						<li class="nav-item">
+							<a id="head4" href="./4.html" class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
+						</li>
+						<li class="nav-item">
+							<a id="head5" href="./5.html"
+								class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
+						</li>
+						<li class="nav-item">
+							<a id="head6" href="./6.html" class="nav-link">ฝากให้รู้ไว้</a>
+						</li>
+						<li class="nav-item">
+							<a id="head7" href="./7.html" class="nav-link">หน่วยงานให้คำปรึกษา</a>
+						</li>
 				</ul>
-			</div>
+		</div>
 
+		<div id="menuMobile" class="nav-hide-menu">
+				<div id="menuWrap" class="nav-menu-wrap nav-bounce">
+					<a href="../index.html" class="nav-menu">
+						<img src="../assets/home/menu1.svg" />
+						<p>หน้าแรก</p>
+					</a>
+					<a href="../page1.html" class="nav-menu">
+						<img src="../assets/home/menu1.svg" />
+						<p>รู้จักทฤษฎีใหม่</p>
+					</a>
+					<a href="../page2.html" class="nav-menu">
+						<img src="../assets/home/menu2.svg" />
+						<p>วิถีทฤษฎีใหม่</p>
+					</a>
+					<a href="./4.html" class="nav-menu">
+						<img src="../assets/home/menu3.svg" />
+						<p>ทฤษฎีใหม่ขั้นต้น</p>
+					</a>
+					<a href="./5.html" class="nav-menu">
+						<img src="../assets/home/menu4.svg" />
+						<p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+					</a>
+					<a href="./6.html" class="nav-menu">
+						<img src="../assets/home/menu5.svg" />
+						<p>ฝากให้รู้ไว้</p>
+					</a>
+					<a href="./7.html" class="nav-menu">
+						<img src="../assets/home/menu6.svg" />
+						<p>หน่วยงานให้คำปรึกษา</p>
+					</a>
+				</div>
+		</div>
+	</nav>
+	<div class="wrapper">
+			
+		<div class="desk">
+				<div class="imag">
+
+						<img src="Page4/1.svg" class="imag1" id="bg">
+						<img src="Page4/4.svg" class="imag1" id="gr">
+						<img src="Page4/5.svg" class="imag1" id="gr2">
+						<img src="Page4/6.svg" class="imag1" id="gr3">
+						<img src="Page4/7.svg" class="imag1" id="tree">
+						<img src="Page4/8.svg" class="imag1" id="tree2">
+						<img src="Page4/9.svg" class="imag1" id="tree3">
+						<img src="Page4/10.svg" class="imag1" id="tree4">
+						<img src="Page4/11.svg" class="imag1" id="gl">
+						<img src="Page4/13.svg" class="imag1" id="gl2">
+						<img src="Page4/11.svg" class="imag1" id="gl3">
+						<img src="Page4/14.svg" class="imag1" id="gl4">
+						<img src="Page4/15.svg" class="imag1" id="bana">
+						<img src="Page4/16.svg" class="imag1" id="bana2">
+						<img src="Page4/17.svg" class="imag1" id="bana3">
+						<img src="Page4/18.svg" class="imag1" id="gl5">
+						<img src="Page4/19.svg" class="imag1" id="gl6">
+						<img src="Page4/20.svg" class="imag1" id="gl7">
+						<img src="Page4/21.svg" class="imag1" id="oni">
+						<img src="Page4/22.svg" class="imag1" id="oni2">
+						<img src="Page4/23.svg" class="imag1" id="oni3">
+						<img src="Page4/24.svg" class="imag1" id="oni4">
+						<img src="Page4/25.svg" class="imag1" id="cab">
+						<img src="Page4/26.svg" class="imag1" id="cab2">
+						<img src="Page4/27.svg" class="imag1" id="cab3">
+						<img src="Page4/28.svg" class="imag1" id="cab4">
+						<img src="Page4/29.svg" class="imag1" id="cab5">
+						<img src="Page4/0.1 new logo.svg" class="imag1" id="icon">
+						<img src="Page4/39.svg" class="imag1" id="gl10">
+						<img src="Page4/2.svg" class="imag1" id="bg2">
+						<img src="Page4/40.svg" class="imag1" id="cir" usemap="#circle">
+						<img src="Page4/42.svg" class="imag1" id="bcir">
+						<img src="Page4/44.svg" class="imag1" id="bcir2">
+						<img src="Page4/46.svg" class="imag1" id="bcir3">
+						<img src="Page4/48.svg" class="imag1" id="bcir4">
+						<div class="imag1 head-text head4" id="text1">
+							ทฤษฎีใหม่ขั้นต้น
+						</div>
+						<div class="imag1 p-text dark-text" id="text2">
+							" การผลิตเป็นการผลิตให้พึงตนเองได้ด้วยวิธีง่ายๆ
+							ค่อยเปนค่อยไปตามกําลังให้พอมีกินไม่อดอยาก”
+							(พระราชดํารัส เมือวันที 15 มีนาคม 2537)	
+						</div>
+						<div class="imag1 p-text dark-text" id="text3">
+								<h5 class="subhead-text">แนวทางสําคัญในการดําเนินงาน เกษตรตามแนว "ทฤษฎีใหม่"</h5>
+
+								- เป็นระบบการผลิตแบบเศรษฐกิจพอเพียง
+								ที่เกษตรถรสามารถเลี้ยงตัวเองได้ในระดับที่ประหยัด
+								- ต้องมีพื้นทีส่วนหนึ่งทํานาข้าว เพื่อให้มีบริโภคตลอดทั้งปี
+								- ต้องมีนํ้าสํารองไว้ใช้เพียงพอตลอดปี
+								เพื่อการเพาะปลูกในระยะฝนทิ้งช่วง หรือในฤดูแล้ง
+								- ใช้อัตราส่วนดังนี้ในการแบ่งพื้นที่ออกเป็น 4 ส่วน
+								30 % ใช้ขุดสระเก็บกักนํา้
+								30 % ใช้ปลูกข้าว
+								30 % ใช้ปลูกพืชผัก ผลไม้ พืชไร่ ไม้ยืนต้น
+								10 % ใช้เป็นที่อยู่อาศัยและอื่นๆ
+								
+						</div>
+						<div class="imag1 p-text dark-text" id="text4">
+								<h5 class="subhead-text">ขุดสระเก็บกักน้ำ</h5>
+
+								พื้นที่ประมาณ 30% ให้ขุดสระเก็บกักนํา้
+								เพื่อให้มีนํา้ใช้สมํา่เสมอตลอดปี โดยเก็บกัก
+								นํา้ฝนในฤดูฝน และใช้เสริมการปลูกพืชใน
+								ฤดูแล้ง หรือระยะฝุนทิ้งช่วง ตลอดจนการ
+								เลี้ยงสัตว์ และพืชนํา้ต่างๆ เช่น ผักบุ้ง
+								ผักกระเฉด โสน ฯลฯ
+						</div>
+						<div class="imag1 p-text dark-text" id="text5">
+								<h5 class="subhead-text">ปลูกผลไม้ ไม้ยืนต้น</h5>
+
+								พื้นที่ประมาณ 30 % ให้ปลูกไม้ผล ไม้ยืนต้น 
+								พืชไร่ พืชผัก พืชสมุนไพร ฯลฯ
+								อย่างผสมผสานกันและหลากหลายใน
+								พื้นที่เดียวกันเพื่อใช้เป็นอาหารประจําวัน
+								หากเหลือจากการบริโภคก็นําไปขายได้
+						</div>
+						<div class="imag1 p-text dark-text" id="text6">
+								<h5 class="subhead-text">ปลูกข้าว</h5>
+
+								พึ้นที่ประมาณ 30 % ให้ปลูกข้าวในฤดูฝน
+								เพื่อใช้เป็นอาหารประจําวันสําหรับครัวเรือน
+								ให้เพียงพอตลอดปี โดยไม่ต้องซื้อหาใน
+								ราคาแพง เป็นการลดค่าใช้จ่ายและสามารถ
+								พึ่งตนเองได้
+						</div>
+						<div class="imag1 p-text dark-text" id="text7">
+								<h5 class="subhead-text">ที่อยู่อาศัย และอื่นๆ</h5>
+
+								พื้นที่ประมาณ 10% ใช้เป็นที่อยู่อาศัย
+								เลี้ยงสัตว์ ถนน คันดิน โรงเรือนและสิ่งก่อสร้างอื่นๆ 
+								รวมทั้งคอกสัตว์ เรือนเพาะชํา ฉางเก็บผลิตผลการเกษตร ฯลฯ
+						</div>
+						<img src="Page4/3.svg" class="imag1" id="bot">
+						<!-- <div  class="imag1" id="foot">
+							เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+							แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+						</div> -->
+						<div  class="imag1 dark-green-text p-text" id="foot">
+								<div>
+										เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสมแขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019
+								</div>
+						</div>
+						<img src="Page4/hand.svg" class="imag1" id="hand">
+		
+		
+					</div>
 		</div>
 
 		<div class="mobi">
+				
+				<div class="mimag">
 
-			<div class="mimag">
+						<img src="Page4/Mobile/1.svg" class="imag1" id="bgm">
+						<img src="Page4/Mobile/4.svg" class="imag1" id="mgr">
+						<img src="Page4/Mobile/5.svg" class="imag1" id="mgr2">
+						<img src="Page4/Mobile/6.svg" class="imag1" id="mgr3">
+						<img src="Page4/Mobile/7.svg" class="imag1" id="mgl">
+						<img src="Page4/Mobile/8.svg" class="imag1" id="mgl2">
+						<img src="Page4/Mobile/9.svg" class="imag1" id="mgl3">
+						<img src="Page4/Mobile/10.svg" class="imag1" id="mgl4">
+						<img src="Page4/Mobile/11.svg" class="imag1" id="mtree">
+						<img src="Page4/Mobile/12.svg" class="imag1" id="mgl5">
+						<img src="Page4/Mobile/13.svg" class="imag1" id="mtree5">
+						<img src="Page4/Mobile/14.svg" class="imag1" id="mcab">
+						<img src="Page4/Mobile/15.svg" class="imag1" id="moni">
+						<img src="Page4/Mobile/17.svg" class="imag1" id="mgl6">
+						<img src="Page4/Mobile/16.svg" class="imag1" id="mgl7">
+						<img src="Page4/Mobile/18.svg" class="imag1" id="mgl8">
+						<img src="Page4/Mobile/19.svg" class="imag1" id="mgl9">
+						<img src="Page4/Mobile/20.svg" class="imag1" id="mgl10">
+						<img src="Page4/Mobile/21.svg" class="imag1" id="mgl11">
+						<img src="Page4/Mobile/22.svg" class="imag1" id="mbana">
+						<img src="Page4/Mobile/23.svg" class="imag1" id="mgl12">
+						<img src="Page4/Mobile/2.svg" class="imag1 position-relative" id="mbg2">
+						<img src="Page4/Mobile/29.svg" class="imag1" id="mcir" usemap="#bcircle">
+						<img src="Page4/Mobile/30.svg" class="imag1" id="mbcir" onclick="showMPage4()">
+						<img src="Page4/Mobile/31.svg" class="imag1" id="mbcir2" onclick="showMPage3()">
+						<img src="Page4/Mobile/32.svg" class="imag1" id="mbcir3" onclick="showMPage2()">
+						<img src="Page4/Mobile/33.svg" class="imag1" id="mbcir4" onclick="showMPage1()">
+						<img src="Page4/Mobile/34.svg" class="imag1" id="mcab4">
+						<div class="imag1 mtext p-text light-text" id="mtext">
+								<h3 class="subhead-text">ทฤษฎีใหม่ขั้นต้น การจัดสรรที่อยู่อาศัยและทำกิน</h3>
+								พื้นที่ซึ่งเฉลี่ยแล้วเกษตรกรไทยมีเนื้อที่ถือครอง 
+								10-15 ไร่/ ครอบครัว
+								โดยแบ่งออกเป็น 4 ส่วน
+								คือ แหล่งน้ํา : นาข้าว
+								: พืชผสมผสาน : โครงสร้างพื้นฐาน
+								ในอัตราส่วน 30 : 30 : 30 : 10 ดังนี้
+						</div>
+						<div class="imag1 mtext p-text light-text" id="mtext2">
+								<h3 class="subhead-text">ส่วนที่ 1 ร้อยละ 30 ให้ขุดสระกักเก็บน้ำในฤดูฝน</h3>
+								
+								เพื่อใช้ในการเพาะปลูกและเสริมการปลูกพืชใน
+								ฤดูแล้งไดัตลอดปี ทั้งยังใช้เลี้ยงปลา ปลูกพืชน้ำ
+								และพืชริมสระ เพื่อการบริโภคและ เพิ่มรายได้
+								ให้กับครอบครัวอีกทางหนึ่ง  โดยพระราชทาน
+								แนวทางการคำานวณเว่าต้องการนํ้า 1,000
+								ลูกบาศก์เมตรต่อการเพาะปลูก 1 ไรj โดย
+								ประมาณ และบนสระนํhาสามารถสร้างเล้าไก่ เล้า
+								เปิด และเล้าสุกรเพิ่มด้วยก็ได้
+						</div>
+						<div class="imag1 mtext p-text light-text" id="mtext3">
+								<h3 class="subhead-text">ส่วนที่ 2 ร้อยละ 30 ให้ปลูกพืชผสมผสาน</h3>
+								ปลูกไม้ผล ไม้ยืนต้น ไม้ใช้สอย ไม้ทําเชื้อเพลิง
+								ไม้สร้างบ้าน พืช ผัก พืชไร พชสมุนไพรฯลฯ
+								เพื่อการบริโภคและ ใช้สอยอย่างพอเพียง หาก
+								เหลือบริโภคก็นําไป จําหน่ายเป็นรายได้ต่อไป
+						</div>
+						<div class="imag1 mtext p-text light-text" id="mtext4">
+								<h3 class="subhead-text">ส่วนที่ 3 ร้อยละ 30 ให้ทํานาข้าว</h3>
+								
+								เนื่องจากคนไทยบริโภคข้าวเป็นอาหารหลักโดย
+								มีหลักเกณฑ์เฉลี่ยเกษตรกรบริโภคข้าว คนละ
+								200 กิโลกรัมข้าวเปลือก/ปี ซึ่งเพียงพอต่อการ
+								บริโภคตลอดปี เพื่อยืดหลักพึ่งตนเองได้อย่าง
+								มีอิสรภาพ
+						</div>
+						<div class="imag1 mtext p-text light-text" id="mtext5">
+								<h3 class="subhead-text">ส่วนที่ 4 ร้อยละ 10 เป็นโครงสร้างพื้นฐาน</h3>
 
-				<img src="Page4/Mobile/1.svg" class="imag1" id="bgm">
-				<img src="Page4/Mobile/4.svg" class="imag1" id="mgr">
-				<img src="Page4/Mobile/5.svg" class="imag1" id="mgr2">
-				<img src="Page4/Mobile/6.svg" class="imag1" id="mgr3">
-				<img src="Page4/Mobile/7.svg" class="imag1" id="mgl">
-				<img src="Page4/Mobile/8.svg" class="imag1" id="mgl2">
-				<img src="Page4/Mobile/9.svg" class="imag1" id="mgl3">
-				<img src="Page4/Mobile/10.svg" class="imag1" id="mgl4">
-				<img src="Page4/Mobile/11.svg" class="imag1" id="mtree">
-				<img src="Page4/Mobile/12.svg" class="imag1" id="mgl5">
-				<img src="Page4/Mobile/13.svg" class="imag1" id="mtree5">
-				<img src="Page4/Mobile/14.svg" class="imag1" id="mcab">
-				<img src="Page4/Mobile/15.svg" class="imag1" id="moni">
-				<img src="Page4/Mobile/17.svg" class="imag1" id="mgl6">
-				<img src="Page4/Mobile/16.svg" class="imag1" id="mgl7">
-				<img src="Page4/Mobile/18.svg" class="imag1" id="mgl8">
-				<img src="Page4/Mobile/19.svg" class="imag1" id="mgl9">
-				<img src="Page4/Mobile/20.svg" class="imag1" id="mgl10">
-				<img src="Page4/Mobile/21.svg" class="imag1" id="mgl11">
-				<img src="Page4/Mobile/22.svg" class="imag1" id="mbana">
-				<img src="Page4/Mobile/23.svg" class="imag1" id="mgl12">
-				<img src="Page4/Mobile/2.svg" class="imag1" id="mbg2">
-				<img src="Page4/Mobile/24.svg" class="imag1" id="mtext">
-				<img src="Page4/Mobile/25.svg" class="imag1" id="mtext2">
-				<img src="Page4/Mobile/26.svg" class="imag1" id="mtext3">
-				<img src="Page4/Mobile/27.svg" class="imag1" id="mtext4">
-				<img src="Page4/Mobile/28.svg" class="imag1" id="mtext5">
-				<img src="Page4/Mobile/29.svg" class="imag1" id="mcir" usemap="#bcircle">
-				<img src="Page4/Mobile/30.svg" class="imag1" id="mbcir" onclick="showMPage4()">
-				<img src="Page4/Mobile/31.svg" class="imag1" id="mbcir2" onclick="showMPage3()">
-				<img src="Page4/Mobile/32.svg" class="imag1" id="mbcir3" onclick="showMPage2()">
-				<img src="Page4/Mobile/33.svg" class="imag1" id="mbcir4" onclick="showMPage1()">
-				<!-- <img src="Page4/Mobile/34.svg" class="imag1" id="mcab4"> -->
-				<img src="Page4/Mobile/35.svg" class="imag1" id="mtext6">
-				<img src="Page4/Mobile/36.svg" class="imag1" id="mtext7">
-				<img src="Page4/Mobile/38.svg" class="imag1" id="micon">
-				<img src="Page4/Mobile/Footer(mobile) finalllll-02.svg" class="imag1" id="mfoot">
-				<img src="Page4/hand.svg" class="imag1" id="mhand">
-
-			</div>
-
-			<button id="close-image" onclick="showPage()">
-				<img src="Page4/Mobile/threelines.png" id="im5">
-				<div class="dropdown-content" id="myDiv" style="display:none">
-					<ul>
-						<li id="list2"><a id="mtext8" href="../index.html">หน้าแรก</a></li>
-						<li id="list1"><a id="mtext8" href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-						<li id="list1"><a id="mtext8" href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-						<li id="list1"><a id="mtext8" href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-						<li id="list1"><a id="mtext8" href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-						<li id="list1"><a id="mtext8" href="6.html">ฝากให้รู้ไว้</a></li>
-						<li id="list1"><a id="mtext8" href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li></li>
-					</ul>
-				</div>
-			</button>
-
+								คือเป็นที่อยู่อาศัยและอื่นๆ เช่น ถนน ลานตาก
+								ฉางข้าว กองปุ๋ยหมัก โรงเพาะเห็ด พืชผักสวนครัว
+								เลี้ยงสัตว์และโรงเรือนเก็บอุปกรณ์
+						</div>
+						<div class="imag1 mtext" id="mtext6">
+							<h4 class="head-text head4">ทฤษฎีใหม่ขั้นต้น</h4>
+						</div>
+						<div class="imag1 mtext p-text" id="mtext7">
+								" การผลิตเป็นการผลิตให้พึงตนเองได้ด้วยวิธีง่ายๆ
+								ค่อยเปนค่อยไปตามกําลังให้พอมีกินไม่อดอยาก”
+								(พระราชดํารัส เมื่อวันที่ 15 มีนาคม 2537)
+						</div>
+						<!-- <div  class="imag1" id="mfoot">
+							เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+							แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+						</div> -->
+						<div  class="imag1 dark-green-text p-text" id="mfoot">
+								<div>
+										เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสมแขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019
+								</div>
+						</div>
+						<img src="Page4/hand.svg" class="imag1" id="mhand">
+		
+					</div>
 		</div>
 
 	</div>
@@ -158,7 +310,23 @@
 		<area shape="rect" coords="0, 0, 230, 230" onclick="showMPage4()">
 
 	</map>
-
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/navbar.js"></script>
+	<script>
+			let sceneDesktop = new Parallax(
+				document.getElementById("sceneDesktop"), {
+					limitX: 0
+				}
+			);
+	
+			let sceneS1Desktop = new Parallax(
+				document.getElementById("sceneS1Desktop")
+			);
+	
+			let sceneS2Desktop = new Parallax(
+				document.getElementById("sceneS2Desktop")
+			);
+		</script>
 	<script>
 
 		function showPage() {
