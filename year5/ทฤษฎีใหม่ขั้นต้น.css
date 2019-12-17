@@ -349,7 +349,7 @@ li a{
 #text2{
 	width: 31%;
 	margin-left: 22%;
-	margin-top: 20%;
+	margin-top: 22%;
 }
 
 #bg2{
@@ -361,8 +361,8 @@ li a{
 	width: 25%;
 	margin-left: 18%;
 	margin-top: 78%;
-	-webkit-animation: cir 0.75s linear 2s 2 both;
-	animation: cir 0.75s linear 2s 2 both;
+	-webkit-animation: cir 0.75s linear 2s 1 both;
+	animation: cir 0.75s linear 2s 1 both;
 }
 @-webkit-keyframes cir {
   0% {
@@ -524,7 +524,7 @@ li a{
     margin-top: 105%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 991px){
 
 	.mimag{ 
 		overflow-x: hidden!important;
@@ -776,8 +776,8 @@ li a{
 		margin-left: 20%;
 	}
 	#mcir{
-		-webkit-animation: mcir 0.75s linear 2s 2 both;
-	    animation: mcir 0.75s linear 2s 2 both;
+		-webkit-animation: mcir 0.75s linear 2s 1 both;
+	    animation: mcir 0.75s linear 2s 1 both;
 	}
 	@-webkit-keyframes mcir {
   0% {
@@ -900,9 +900,9 @@ li a{
 		display: none;
 	}
 
-	#mtext6{
+	/* #mtext6{
 		margin-top: 45%;
-	}
+	} */
 
 	#mtext7{
 		width: 80%;
@@ -984,3 +984,104 @@ li a{
 	}
 
 }
+
+
+/* overide */
+.mimag {
+  width: 102vw;
+  height: 102vh;
+  position: absolute;
+}
+.imag {
+  width: 101vw;
+    position: absolute;
+}
+
+/* #text6 {
+  text-align: center;
+  font-size: 5em;
+  color: orange;
+} */
+/* 
+#text7 {
+  text-align: center;
+  font-size: 1.8em;
+} */
+
+#text1 {
+  color: orange;
+}
+
+#mtext6 {
+  text-align: center;
+  color: orange;
+  margin-top: 40%;
+  z-index: 1;
+}
+
+
+#mtext7 {
+  text-align: center;
+  margin-top: 65%;
+  z-index: 1;
+}
+
+#foot {
+  /* color: #757a47; */
+  background-color: #b5be6d;
+  padding: 1em 10em;
+  text-align: center;
+}
+
+#mhand {
+  user-select: none;
+}
+
+/* #mfoot {
+  color: #757a47;
+  background-color: #b5be6d;
+  padding: 1em 10em;
+  text-align: center;
+} */
+
+.imag1 {
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.mtext {
+  /* font-size: 0.8em; */
+  margin-top: 10%;
+}
+
+#mfoot {
+  /* color: #757a47; */
+  background-color: #b5be6d;
+  padding: 1em 0;
+  text-align: center;
+  margin: 0 !important;
+  top: 0;
+  position: relative;
+} 
+
+#mfoot div {
+        /* color: #757a47; */
+        background-color: #b5be6d;
+        /* padding: 1em 10em; */
+        width: 70%;
+        text-align: center;
+        /* margin: 0 !important; */
+        width: 70%;
+        margin: auto;
+        right: 0;
+        left: 0;
+}
+
+ #text3 , #text4 , #text5, #text6 , #text7{
+  z-index: 1;
+  width: 36%;
+  margin-top: 75%;
+}
+
+
