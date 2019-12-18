@@ -780,7 +780,7 @@ li a {
 .text {
   position: absolute;
   top: 0;
-  color: white;
+  /* color: white; */
 }
 .wrapper {
   margin-top: 10vh;
@@ -941,5 +941,109 @@ li a {
 }
 
 .navbar {
-	position: absolute !important;
+  position: absolute !important;
+}
+@media screen and (max-width: 991px) {
+  
+  .p-text {
+    font-size: 2.2vh;
+  }
+  .subhead-text {
+    font-size: 3.6vh;
+    font-family: Itim;
+  }
+  .mimag {
+    position: relative;
+  }
+  #mtext3 {
+    margin-top: 179%;
+  }
+  #mtext4 {
+    margin-top: 243%;
+  }
+  #mtext5 {
+    margin-top: 308%;
+  }
+  #mtext6 {
+    margin-top: 340%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .navbar {
+    width: 118vw;
+    left: -18vw;
+    position: relative;
+  }
+  #mtext {
+    margin-top: 10%;
+    width: 80%;
+  }
+  #mtext3 {
+    margin-top: 169%;
+  }
+  #mtext4 {
+    margin-top: 241%;
+  }
+  #mtext5 {
+    margin-top: 294%;
+  }
+  #mtext6 {
+    margin: auto;
+    margin-top: 333%;
+    width: 80%;
+    text-align: center;
+  }
+  #mtext7 {
+    margin-left: 23%;
+    margin-top: 440%;
+    width: 60%;
+    font-size: 1.8vh;
+    color: black;
+  }
+  #mtext8 {
+    margin-left: 23%;
+    font-size: 1.8vh;
+    width: 60%;
+    font-size: 1.8vh;
+    color: black;
+    margin-top: 520%;
+  }
+  #mtext9 {
+    margin-left: 23%;
+    margin-top: 602%;
+    width: 60%;
+    font-size: 1.8vh;
+    color: black;
+  }
+  #mtext10 {
+    margin: auto;
+    margin-top: 636%;
+    width: 56%;
+    font-size: 1.8vh;
+  }
+  #mhuman3 {
+    margin-top: 144%;
+    width: 30%;
+    margin-left: 51%;
+  }
+  #mhuman4 {
+    width: 21%;
+    margin-top: 208%;
+    margin-left: 52%;
+    /* -webkit-animation: mhuman4 2s linear 2s 5 both;
+    animation: mhuman4 2s linear 2s 5 both; */
+  }
+  #mhuman5 {
+    width: 23%;
+    margin-top: 266%;
+    margin-left: 57%;
+    /* -webkit-animation: mhuman5 2s linear 2s 5 both; */
+    /* animation: mhuman5 2s linear 2s 5 both; */
+  }
+
+  #mphoto {
+    width: 90%;
+    margin: auto;
+    margin-top: 386%;
+  }
 }
