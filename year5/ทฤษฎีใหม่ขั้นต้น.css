@@ -1083,3 +1083,13 @@ li a{
   width: 36%;
   margin-top: 75%;
 }
+
+
+.imag{
+	position: absolute;
+    top: 10vh;
+}
+
+.navbar {
+	position: absolute !important;
+}

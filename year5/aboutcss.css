@@ -22,7 +22,7 @@ body{
 	margin-top: -10px;
 }
 
-#im2, .im3, #im3, .im4, #im4, #im5{
+#mobi{
 	display: none;
 }
 
@@ -49,13 +49,13 @@ body{
 }
 
 #pad{
-	padding-right: 100px; 
+	padding-right: 1.5em; 
 }
 
 .goto{
 	position: absolute;
 	width: 100%;
-	margin-top: 4%;
+	margin-top: 2%;
 	margin-right: 5%;
 	text-align: right;
 }
@@ -80,8 +80,8 @@ li a{
 
 
 
-@media screen and (max-width: 768px){
-	.im1, .goto{
+@media screen and (max-width: 991px){
+	.desk{
 		display: none;
 	}
 
@@ -102,6 +102,13 @@ li a{
 		margin-left: 15%;
 		width: 80%;
 	}
+
+	/* #mfoot {
+		display: block;
+	}
+	#foot {
+		display: none;
+	} */
 
 	#im3{
 		display: block;
@@ -132,13 +139,13 @@ li a{
 		margin-top: 10%;
 	}
 
-	#text1{
+	/* #text1{
 		position: relative;
 		display: block;
 		background-color: #f9d6c2;
 		font-size: 200%;
-		padding: 30px;
-	}
+		padding: 30px; */
+	/* } */
 
 	#list1{
 		display: inline-block;
@@ -196,4 +203,121 @@ li a{
 
     .dropdown-content a:hover {background-color: #f1f1f1}
 
+}
+
+
+/* overide */
+#foot {
+	/* color: #757a47; */
+	background-color: #b5be6d;
+	padding: 1em 0;
+	text-align: center;
+	margin: 0 !important;
+	position: relative;
+  }
+  
+  #foot div {
+	/* color: #757a47; */
+	background-color: #b5be6d;
+	/* padding: 1em 10em; */
+	width: 70%;
+	text-align: center;
+	/* margin: 0 !important; */
+	width: 70%;
+	margin: auto;
+	right: 0;
+	left: 0;
+  }
+  
+  #mfoot {
+	/* color: #757a47; */
+	background-color: #b5be6d;
+	padding: 1em 0;
+	text-align: center;
+	margin: 0 !important;
+	position: relative;
+  }
+  
+  #mfoot div {
+	/* color: #757a47; */
+	background-color: #b5be6d;
+	/* padding: 1em 10em; */
+	width: 70%;
+	text-align: center;
+	/* margin: 0 !important; */
+	width: 70%;
+	margin: auto;
+	right: 0;
+	left: 0;
+  }
+
+.im1 {
+	object-fit: unset !important;
+}
+
+#text1 {
+	top: 0;
+    margin-top: 13%;
+    width: 60%;
+    margin-left: 12%;
+}
+
+#text2 {
+	top: 0;
+    margin-top: 17%;
+    width: 60%;
+    margin-left: 12%;
+}
+
+#text3 {
+	color:white;
+	top: 0;
+    margin: auto;
+    margin-top: 72%;
+    width: 45%;
+    right: 0;
+    left: 0;
+}
+
+#mtext1 {
+	top: 0;
+    right: 0;
+    margin-top: 36%;
+    width: 95%;
+    text-align: center;
+}
+
+#mtext2 {
+	top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 50%;
+    width: 84%;
+    text-align: center;
+}
+
+#mtext3 {
+	color: white;
+    top: 0;
+    margin: auto;
+    margin-top: 222%;
+    width: 84%;
+    right: 0;
+    left: 0;
+}
+
+.divider {
+	border-bottom: 2px white solid;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.imag{
+	position: absolute;
+    top: 10vh;
+}
+
+.navbar {
+	position: absolute !important;
 }

@@ -4,16 +4,95 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="ทฤษฏีใหม่ขั้นก้าวหน้าcss.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/page1.css"> -->
 	<title>ทฤษฏีใหม่ขั้นก้าวหน้า</title>
+	<style>
+		.nav-active,
+		.nav-active:hover,
+		.nav-link:hover {
+			color: #455b35  !important;
+		}
+	</style>
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg" id="navbar">
+			<a class="navbar-brand">
+			</a>
+			<div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
+						<span class="nav-hamburger-box">
+							<span class="nav-hamburger-inner"></span>
+						</span>
+			</div>
+	
+			<div class="navbar-collapse d-none d-lg-block">
+						<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a id="home" href="../index.html" class="nav-link">หน้าแรก</a>
+								</li>
+								<li class="nav-item">
+									<a id="head1" href="../page1.html" class="nav-link">รู้จักทฤษฎีใหม่</a>
+								</li>
+								<li class="nav-item">
+									<a id="head2" href="../page2.html" class="nav-link">วิถีทฤษฎีใหม่</a>
+								</li>
+								<li class="nav-item">
+									<a id="head4" href="./4.html" class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
+								</li>
+								<li class="nav-item nav-active">
+									<a id="head5" href="./5.html"
+										class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
+								</li>
+								<li class="nav-item">
+									<a id="head6" href="./6.html" class="nav-link">ฝากให้รู้ไว้</a>
+								</li>
+								<li class="nav-item">
+									<a id="head7" href="./7.html" class="nav-link">หน่วยงานให้คำปรึกษา</a>
+								</li>
+						</ul>
+			</div>
+	
+			<div id="menuMobile" class="nav-hide-menu">
+						<div id="menuWrap" class="nav-menu-wrap nav-bounce">
+							<a href="../index.html" class="nav-menu">
+								<img src="../assets/home/menu1.svg" />
+								<p>หน้าแรก</p>
+							</a>
+							<a href="../page1.html" class="nav-menu">
+								<img src="../assets/home/menu1.svg" />
+								<p>รู้จักทฤษฎีใหม่</p>
+							</a>
+							<a href="../page2.html" class="nav-menu">
+								<img src="../assets/home/menu2.svg" />
+								<p>วิถีทฤษฎีใหม่</p>
+							</a>
+							<a href="./4.html" class="nav-menu">
+								<img src="../assets/home/menu3.svg" />
+								<p>ทฤษฎีใหม่ขั้นต้น</p>
+							</a>
+							<a href="./5.html" class="nav-menu">
+								<img src="../assets/home/menu4.svg" />
+								<p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+							</a>
+							<a href="./6.html" class="nav-menu">
+								<img src="../assets/home/menu5.svg" />
+								<p>ฝากให้รู้ไว้</p>
+							</a>
+							<a href="./7.html" class="nav-menu">
+								<img src="../assets/home/menu6.svg" />
+								<p>หน่วยงานให้คำปรึกษา</p>
+							</a>
+						</div>
+			</div>
+	</nav>
 	<div class="wrapper">
 
 		<div class="desk">
 
 			<div class="imag">
 			
-				<img src="Picture/16-01.svg" id="icon">
+				<!-- <img src="Picture/16-01.svg" id="icon"> -->
 				<img src="Picture/1.svg" id="gr">
 				<img src="Picture/4.svg" id="house">
 				<img src="Picture/5.svg" id="grass">
@@ -35,24 +114,75 @@
 				<img src="Picture/21-2-01.svg" id="monkgr">
 				<img src="Picture/21-2-02.svg" id="monk">
 				<img src="Picture/22-01.svg" id="farmer3">
-				<img src="Picture/24-01.svg" id="text1">
-				<img src="Picture/25-01.svg" id="text2">
-				<img src="Picture/26-01-01.svg" id="text3">
-				<img src="Picture/27-01.svg" id="text4">
-				<img src="Picture/Footer finalllll-02.svg" class="imag1" id="foot">
-
-			</div>
-
-			<div class="goto">
-				<ul>
-					<li><a href="../index.html">หน้าแรก</a></li>
-					<li><a href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-					<li><a href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-					<li><a href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-					<li><a href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-					<li><a href="6.html">ฝากให้รู้ไว้</a></li>
-					<li><a href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li>
-				</ul>
+				<div id="text1" class="p-text dark-text">
+					    <h1 class="head-text head5">ทฤษฎีใหม่ขั้นก้าวหน้า</h1>
+						
+						เมื่อเกษตรกรเข้าใจหลักการและได้ลงมือปฏิบัติตามขั้น
+						ที่หนึ่งในที่ดินของตนจนได้ผลแล้ว เกษตรกรกิ็สามารถ
+						พัฒนาตนเองไปสู่ขั้นพออยู่พอกิน และตัดค่าใช้จ่ายลง
+						เกือบทั้งหมด มีอิสระ จากสภาพปัจจัยภายนอกแล้วและ
+						เพื่อให้มีผลสมบูรณ์ยิ่งขึ้นจึงควรที่จะ ต้องดําเนินการ
+						ตามขันที่สอง
+				</div>
+				<div id="text2" class="light-text p-text">
+					    <h3 class="subhead-text">ทฤษฎีใหม่ขั้นที่สอง</h3>
+						<div class="mt-4"></div>				
+						“เมื่อเกษตรกรเข้าใจในหลักการและได้ปฏิบัติที่ดินของตัวเองจนได้ผลแล้ว ต้องเริ่มขั้นที่สองคือ ให้เกษตรกรรวมพลังกันในรูปกลุ่ม
+กลุ่ม หรือสหกรณ์ร่วมแรงในการผลิต การตลาด การเป็นอยู่ สวัสดิการ การศึกษา และศรัทธาเพื่อให้พอมีกินใช้ ช่วยให้สังคมดีขึ้นพร้อมๆ กันไม่รวยคนเดียว”
+(พระราชดํารัสเมื่อวันที่ 12 กุมภาพันธ์ พ.ศ.2538)
+				</div>
+				<div id="text3" class="light-text p-text">
+					    1. การผลิต (พันธุ์พืช เตรียมดิน ชลประทาน ฯลฯ)
+						เกษตรกรจะต้องร่วมมือในการผลิต โดยเริ่มตั้งแต่
+						ขั้นเตรียมดิน การหาพันธุ์พืช ปุ๋ย การจัดการนํา และ
+						อื่น๓ เพื่อการเพาะปลูก
+						<div class="mt-4"></div>				
+						2. การตลาด (ลานตากข้าว ยุ้ง เครื่องสีข้าว การจําหน่ายผลผลิต) เมื่อมีผลผลิตแล้วจะต้อง
+						เตรียมการต่าง ๆ เพื่อการขายผลผลิตให้ได้ประโยชน์
+						สูงสุด เช่น การเตรียมลานตากข้าวร่วมกัน การ
+						จัดหายุ้งรวบรวมข้าว เตรียมหา เครื่องสีข้าว ตลอด
+						จนการร่วมกันขายผลผลสิตใแหได้ราคาดคีและลดค่าใช้
+						จ่าย
+						<div class="mt-4"></div>				
+						3. การเป็นอยู่ (อาหาร เครื่องนุ่งหุ่ม ฯลฯ) ในขณะ
+						เดียวกันเกษตรกรต้องมีความเป็นอยู่ที่ดีพอสมควร
+						โดยมีปัจจัยพื้นฐานในการดํารงชีวิตเช่นอาหารการกินต่างๆ 
+						เสื้อผ้าที่พอเพียง
+						<div class="mt-4"></div>				
+						4. สวัสดิการ (สาธารณสุข เงินกู้) แต่ละชุมชนมี
+						สวัสดิภาพและบริการที่จําเป็น เช่น มีสถานีอนามัย
+						เมื่อยาม ป่วยไข้หรือมีกองทุนไว้กู้ยืมเพื่อประโยชน์
+						ในกิจกรรมต่าง ๆ ของชุมชน
+						<div class="mt-4"></div>				
+						5. การศึกษา (โรงเรียน ทุนการศึกษา) ชุมชนควร
+						มีบทบาทในการส่งเสริม เช่น มีกองทุนเพื่อการศึกษาให้เล่าเรียนให้แก่เยาวชนของชุมชน
+						<div class="mt-4"></div>				
+						6. สังคมและศาสนา (ชุมชน วัด) ชุมชนควรเป็นที่ 
+						รวมในการพัฒนาสังคมและจิตใจ โดยมีศาสนาเป็นที่
+						ยืดเหนียว
+						<div class="mt-4"></div>				
+						กิจกรรมทั้งหมดลังกล่าวมา ต้องได้รับความร่วมมือ
+						จากทุกฝ่ายที่เกี่ยวข้อง ไม่ว่าจะเป็นส่วนราชการ
+						องค์กรเอกชน ที่สําคัณที่สุดคือตัวของสมาชิกใน
+						ซุมชนเอง
+				</div>
+				<div id="text4" class="p-text light-text">
+					    <h1 class="subhead-text">ทฤษฎีใหม่ขั้นที่สาม</h1>
+						“ เมื่อดําเนินการขั้นตอนที่สองแล้ว เกษตรกรหรือกลุ่มเกษตรกรก็ควรพัฒนา ก้าวหน้าไปสู่ขั้นที่สามต่อไป คือ
+						ร่วมมือกับแหล่งเงินและแหล่งพลังงาน ตั้งและ บริการโรงสี ตั้งและ บริการร้านสหกรณ์ ช่วยกันลงทุน ช่วยกัน
+						พัฒนาคุณภาพชีวิตของประ ชาชนชนบท ซึ่งไม่ได้ทําอาชีพเกษตรอย่างเดียว”
+						<div class="mt-4"></div>				
+						ทั้งนี้ฝ่ายเกษตรกรและฝ่ายธนาคาร(หรือบริษัทเอกชน)ก็จะได้รับประโยชนโดย
+						- เกษตรกรขายข้าวได้ราคาสูง เพราะไม่ถูกกดราคา
+						- ธนาคาร(หรือบริษัทเอกชน)สามารถซื้อข้าวบริโภคในราคาต่ำเพราะตรงจากเกษตรกรและมาสีเอง
+						- เกษตรกรซื้อเครื่องอุปโภคบริโภคในราคาตํา เนื่องจากรวมกันซื้อเป็นจํานวนมาก(เป็นร้านสหกรณ์ราคาขายส่ง)
+						- ธนาคาร หรือบริษัทเอกชนจะสามารถกระจายบุคลากรเพื่อไปดําเนินการใน กิจกรรมต่างๆ ให้เกิดผลดียิ่งขึ้น
+				</div>
+				<div  class="bgm dark-green-text p-text" id="foot">
+						<div>
+								เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสมแขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2019
+						</div>
+				</div>
 			</div>
 		</div>
 		
@@ -77,31 +207,76 @@
 			<img src="Picture/5MOBLIE/mobi15-01.svg" class="bgm">
 			<img src="Picture/5MOBLIE/mobi16-01.svg" class="bgm">
 			<img src="Picture/5MOBLIE/mobi17-01.svg" class="bgm">
-			<img src="Picture/5MOBLIE/mobi18-01.svg" class="bgm">
-			<img src="Picture/5MOBLIE/mobi19-01.svg" class="bgm">
-			<img src="Picture/5MOBLIE/mobi20-01.svg" class="bgm">
-			<img src="Picture/5MOBLIE/mobi21-01.svg" class="bgm">
-			<img src="Picture/5MOBLIE/newlogo_mibile-01.svg" class="bgm" id="iconm">
-			<img src="Picture/5MOBLIE/Footer(mobile) finalllll-02.svg" class="bgm" id="mfoot">
-
-			<button id="close-image" onclick="showPage()">
-				<img src="Picture/5MOBLIE/threelines.png" id="im5">
-				<div class="dropdown-content" id="myDiv" style="display:none">
-					<ul>
-						<li id="list2"><a id="text5" href="../index.html">หน้าแรก</a></li>
-						<li id="list1"><a id="text5" href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-						<li id="list1"><a id="text5" href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-						<li id="list1"><a id="text5" href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-						<li id="list1"><a id="text5" href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-						<li id="list1"><a id="text5" href="6.html">ฝากให้รู้ไว้</a></li>
-						<li id="list1"><a id="text5" href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li></li>
-					</ul>
-				</div>
-			</button>
+			<img src="Picture/5MOBLIE/mobi18-01.svg" class="bgm position-relative">
+			<div class="bgm p-text dark-text" id="mtex1">
+					<h1 class="head-text head5">ทฤษฎีใหม่ขั้นก้าวหน้า</h1>
+						
+					เมื่อเกษตรกรเข้าใจหลักการและได้ลงมือปฏิบัติตามขั้น
+					ที่หนึ่งในที่ดินของตนจนได้ผลแล้ว เกษตรกรกิ็สามารถ
+					พัฒนาตนเองไปสู่ขั้นพออยู่พอกิน และตัดค่าใช้จ่ายลง
+					เกือบทั้งหมด มีอิสระ จากสภาพปัจจัยภายนอกแล้วและ
+					เพื่อให้มีผลสมบูรณ์ยิ่งขึ้นจึงควรที่จะ ต้องดําเน็นการ
+					ตามขั้นที่สอง
+			</div>
+			<div  class="bgm light-text p-text" id="mtext2">
+					<h3 class="subhead-text">ทฤษฎีใหม่ขั้นที่สอง</h3>
+					<div class="mt-5"></div>				
+					1. การผลิต (พันธ์ุพืช เตรียมดิน ชลประทาน ฯลฯ)
+					เกษตรกรจะต้องร่วมมือในการผลิต โดยเริ่มตั้งแต่
+					ขั้นเตรียมดิน การหาพันธุ์พืช ปุ๋ย การจัดการนํา และ
+					อื่น๓ เพื่อการเพาะปลูก
+					<div class="mt-gw"></div>				
+					2. การตลาด (ลานตากข้าว ยุ้ง เครื่องสีข้าว การจําหน่ายผลผลิต) เมื่อมีผลผลิตแล้วจะต้องเตรียม
+					การต่าง ๆ เพื่อการขายผลผลิตให้ได้ประโยชน์
+					สูงสุด เช่น การเตรียมลานตากข้าวร่วมกัน การจัดหายุ้ง
+					รวบรวมข้าว เตรียมหาเครื่องสีข้าว ตลอดจนการร่วมกัน
+					ขายผลผลิตให้ได้ราคาดีและลดค่าใช้จ่ายลง
+					<div class="mt-gw"></div>				
+					3. การเป็นอยู่ (อาหาร เครื่องนุ่งหุ่ม ฯลฯ) ในขณะ
+					เดียวกันเกษตรกรต้องมีความเป็นอยู่ที่ดีพอสมควรโดยมี
+					ปัจจัยพื้นฐานในการดํารงชีวิตเช่นอาหารการกินต่างๆ
+					เสื้อผ้าที่พอเพียง
+					<div class="mt-gw"></div>				
+					4. สวัสดิการ (สาธารณสุข เงินกู้) แต่ละชุมชนมี
+					สวัสดิภาพและบริการที่จําเป็น เช่น มีสถานีอนามัย
+					เมื่อยาม ป่วยไข้หรือมีกองทุนไว้กู้ยืมเพื่อประโยชน์
+					ในกิจกรรมต่าง ๆ ของชุมชน
+					<div class="mt-gw"></div>				
+					5. การศึกษา (โรงเรียน ทุนการศึกษา) ชุมชนควร
+					มีบทบาทในการส่งเสริม เช่น มีกองทุนเพื่อการศึกษาให้เล่าเรียนให้แก่เยาวชนของชุมชน
+					<div class="mt-gw"></div>				
+					6. สังคมและศาสนา (ชุมชน วัด) ชุมชนที่ควร 
+					รวมในการพัฒนาสังคมและจิตใจ โดยมีศาสนาเป็นที่
+					ยืดเหนียว
+					<div class="mt-gw"></div>				
+					กิจกรรมทั้งหมดลังกล่าวมา ต้องได้รับความร่วมมือ
+					จากทุกฝ่ายที่เกี่ยวข้อง ไม่ว่าจะเป็นส่วนราชการ
+					องค์กรเอกชน ที่สําคัณที่สุดคือตัวของสมาชิกใน
+					ซุมชนเอง
+			</div>
+			<div class="bgm light-text p-text" id="mtex5">
+					<h3 class="subhead-text">ทฤษฎีใหม่ขั้นที่สาม</h3>
+					“ เมื่อดําเนินการขั้นตอนที่สองแล้ว เกษตรกรหรือกลุ่มเกษตรกรก็ควรพัฒนา ก้าวหน้าไปสู่ขั้นที่สามต่อไป คือ
+					ร่วมมือกับแหล่งเงินและแหล่งพลังงาน ตั้งและ บริการโรงสี ตั้งและ บริการร้านสหกรณ์ ช่วยกันลงทุน ช่วยกัน
+					พัฒนาคุณภาพชีวิตของประ ชาชนชนบท ซึ่งไม่ได้ทําอาชีพเกษตรอย่างเดียว”
+					<div class="mt-4"></div>				
+					ทั้งนี้ฝ่ายเกษตรกรและฝ่ายธนาคาร(หรือบริษัทเอกชน)ก็จะได้รับประโยชนโดย
+					- เกษตรกรขายข้าวได้ราคาสูง เพราะไม่ถูกกดราคา
+					- ธนาคาร(หรือบริษัทเอกชน)สามารถซื้อข้าวบริโภคในราคาต่ำเพราะตรงจากเกษตรกรและมาสีเอง
+					- เกษตรกรซื้อเครื่องอุปโภคบริโภคในราคาตํา เนื่องจากรวมกันซื้อเป็นจํานวนมาก(เป็นร้านสหกรณ์ราคาขายส่ง)
+					- ธนาคาร หรือบริษัทเอกชนจะสามารถกระจายบุคลากรเพื่อไปดําเนินการใน กิจกรรมต่างๆ ให้เกิดผลดียิ่งขึ้น
+			</div>
+			<div  class="bgm dark-green-text p-text" id="mfoot">
+					<div>
+							เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+							แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+					</div>
+			</div>
 		</div>
 
 	</div>
-
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/navbar.js"></script>
 	<script type="text/javascript">
 		function showPage() {
 			var x = document.getElementById("myDiv")

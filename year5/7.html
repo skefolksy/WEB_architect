@@ -5,8 +5,87 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="aboutcss.css">
 	<title>หน่วยงานให้คำปรึกษา</title>
+	<link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="../css/page1.css"> -->
+	<style>
+		.nav-active,
+		.nav-active:hover,
+		.nav-link:hover {
+			color: #d75a4d  !important;
+		}
+	</style>
 </head>
 <body>
+		<nav class="navbar navbar-expand-lg" id="navbar">
+				<a class="navbar-brand">
+				</a>
+				<div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
+							<span class="nav-hamburger-box">
+								<span class="nav-hamburger-inner"></span>
+							</span>
+				</div>
+		
+				<div class="navbar-collapse d-none d-lg-block">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a id="home" href="../index.html" class="nav-link">หน้าแรก</a>
+								</li>
+								<li class="nav-item">
+									<a id="head1" href="../page1.html" class="nav-link">รู้จักทฤษฎีใหม่</a>
+								</li>
+								<li class="nav-item">
+									<a id="head2" href="../page2.html" class="nav-link">วิถีทฤษฎีใหม่</a>
+								</li>
+								<li class="nav-item">
+									<a id="head4" href="./4.html" class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
+								</li>
+								<li class="nav-item">
+									<a id="head5" href="./5.html"
+										class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
+								</li>
+								<li class="nav-item">
+									<a id="head6" href="./6.html" class="nav-link">ฝากให้รู้ไว้</a>
+								</li>
+								<li class="nav-item nav-active">
+									<a id="head7" href="./7.html" class="nav-link">หน่วยงานให้คำปรึกษา</a>
+								</li>
+							</ul>
+				</div>
+		
+				<div id="menuMobile" class="nav-hide-menu">
+							<div id="menuWrap" class="nav-menu-wrap nav-bounce">
+								<a href="../index.html" class="nav-menu">
+									<img src="../assets/home/menu1.svg" />
+									<p>หน้าแรก</p>
+								</a>
+								<a href="../page1.html" class="nav-menu">
+									<img src="../assets/home/menu1.svg" />
+									<p>รู้จักทฤษฎีใหม่</p>
+								</a>
+								<a href="../page2.html" class="nav-menu">
+									<img src="../assets/home/menu2.svg" />
+									<p>วิถีทฤษฎีใหม่</p>
+								</a>
+								<a href="./4.html" class="nav-menu">
+									<img src="../assets/home/menu3.svg" />
+									<p>ทฤษฎีใหม่ขั้นต้น</p>
+								</a>
+								<a href="./5.html" class="nav-menu">
+									<img src="../assets/home/menu4.svg" />
+									<p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+								</a>
+								<a href="./6.html" class="nav-menu">
+									<img src="../assets/home/menu5.svg" />
+									<p>ฝากให้รู้ไว้</p>
+								</a>
+								<a href="./7.html" class="nav-menu">
+									<img src="../assets/home/menu6.svg" />
+									<p>หน่วยงานให้คำปรึกษา</p>
+								</a>
+							</div>
+				</div>
+	</nav>
 	<div class="wrapper">
 
 		<div class="bd">
@@ -16,24 +95,80 @@
 				<img src="Desktop pic/7.3-01.svg" class="im1">
 				<img src="Desktop pic/7.6-01.svg" class="im1">
 				<img src="Desktop pic/7.5-01.svg" class="im1">
-				<img src="Desktop pic/7.4-01.svg" class="im1">
-				<img src="Desktop pic/7.1.svg" class="im1" id="Dtext">
+				<img src="Desktop pic/7.4-01.svg" class="im1 position-relative">
+				<!-- <img src="Desktop pic/7.1.svg" class="im1" id="Dtext">
 				<img src="Desktop pic/7.2.svg" class="im1" id="Dtext2">
-				<img src="Desktop pic/7.3.svg" class="im1" id="Dtext3">
-				<img src="Desktop pic/1.10-01.svg" class="im1">
-				<img src="Desktop pic/Footer finalllll-02.svg" class="im1" id="foot">
-
-				<div class="goto">
-					<ul>
-						<li><a href="../index.html">หน้าแรก</a></li>
-						<li><a href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-						<li><a href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-						<li><a href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-						<li><a href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-						<li><a href="6.html">ฝากให้รู้ไว้</a></li>
-						<li><a href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li>
-					</ul>
+				<img src="Desktop pic/7.3.svg" class="im1" id="Dtext3"> -->
+				<div  class="im1 p-text dark-text" id="text1">
+					<h2 class="head-text head7">หน่วยงานให้คำปรึกษา</h2>
+					หากท่านที่มีความสนใจและมีความพร้อมที่จะดำเนินการตามแนวเกษตรทฤษฎีใหม่ สามารถขอคำปรึกษาขอข้อมูล และเยี่ยมชมแปลงสาธิตเกษตรทฤษฎีใหม่ได้ดังนี้
 				</div>
+				<!-- <div  class="im1 p-text dark-text" id="text2">
+						หากท่านที่มีความสนใจ และมีความพร้อมที่จะดำเนินการตามแนว เกษตรทฤษฎีใหม่ สามารถขอคำปรึกษา ขอข้อมูล และเยี่ยมชม แปลงสาธิตเกษตรทฤษฎีใหม่ได้ดังนี้
+				</div> -->
+				<div  class="im1 p-text light-text" id="text3">
+						สำนักงานคณะกรรมการพิเศษเพื่อประสานงาน<br>
+						โครงการอันเนื่องมาจากพระราชดำริ (สำนักงาน กปร.)<br><br>
+						มูลนิธิชัยพัฒนา<br>
+						ติดต่อ : กองประชาสัมพันธ์<br>
+						" โทรศัพท์ 028-061-930 "<br>
+						<div class="divider"></div>
+						โครงการพัฒนาพื้นที่บริเวณวัดมงคลชัยพัฒนาโครงการอันเนื่องมาจากพระราชดำริ<br>
+						อำเภอเฉลิมพระเกียรติ จังหวัดสระบุรี<br>
+						ติดต่อ : ผู้อำนวยการสถานีทดลองพืชไร่พระพุทธบาท<br>
+						" โทรศัพท์ 036-499-181 "<br>
+						<div class="divider"></div>
+						<!-- ศูนย์ศึกษาการพัฒนาเขาหินซ้อนโครงการอันเนื่องมาจากพระราชดำริ -->
+						ศูนย์ศึกษาการพัฒนาเขาหินซ้อนโครงการอันเนื่องมาจากพระราชดำริ<br>
+						อำเภอพนมสารคาม จังหวัดฉะเชิงเทรา<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ เขาหินซ้อน<br>
+						" โทรศัพท์ 038-599-105 "<br>
+						<div class="divider"></div>
+						โครงการพัฒนาพื้นที่บริเวณอ่างเก็บน้ำคลองสีเสียด โครงการอันเนื่องมาจากพระราชดำริ<br>
+						อำเภอปากพลี จังหวัดนครนายก<br>
+						ติดต่อ : นายอำเภอปากพลี<br>
+						" โทรศัพท์ 037-399-657 "<br>
+						<div class="divider"></div>
+						ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ<br>
+						อำเภอท่าใหม่ จังหวัดจันทบุรี <br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ อ่าวคุ้งกระเบน<br>
+						" โทรศัพท์ 039-369-216-8 "<br>
+						<div class="divider"></div>
+						ศูนย์ศึกษาการพัฒนาภูพานอันเนื่องมาจากพระราชดำริ<br>
+						อำเภอเมือง จังหวัดสกลนคร<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ ภูพาน<br>
+						" โทรศัพท์ 042-712-975 "<br>
+						ติดต่อ : ผู้อำนวยการสถานีทดลองพืชไร่สกลนคร<br>
+						" โทรศัพท์ 042-711-008 "<br>
+						<div class="divider"></div>
+						โครงการสาธิตทฤษฎีใหม่บ้านแดนสามัคคี<br>
+						อำเภอเขาวง จังหวัดกาฬสินธุ์<br>
+						ติดต่อ : นายอำเภอเขาวง<br>
+						" โทรศัพท์ 043-589-089 "<br>
+						<div class="divider"></div>
+						โครงการสาธิตทฤษฎีใหม่อันเนื่องมาจากพระราชดำริ<br>
+						อำเภอปักธงชัย จังหวัดนครราชสีมา<br>
+						ติดต่อ : ผู้อำนวยการสถานีทดลองพืชไร่บ้านใหม่สำโรง<br>
+						" โทรศัพท์ 044-325-048 "<br>
+						<div class="divider"></div>
+						ศูนย์ศึกษาการพัฒนาห้วยฮ่องไคร้อันเนื่องมาจากพระราชดำริ<br>
+						อำเภอดอยสะเก็ด จังหวัดเชียงใหม่<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ ห้วยฮ่องไคร้<br>
+						" โทรศัพท์ 053-246-402 "<br>
+						<div class="divider"></div>
+						ศูนย์ศึกษาการพัฒนาพิกุลทองอันเนื่องมาจากพระราชดำริ<br>
+						อำเภอเมือง จังหวัดนราธิวาส<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ พิกุลทอง<br>
+						" โทรศัพท์ 073-513-560 "<br>
+						<div class="divider"></div>
+				</div>
+				<div  class="bgm p-text dark-green-text" id="foot">
+						<div>
+								เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+								แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+						</div>
+				</div>
+				<!-- <img src="Desktop pic/Footer finalllll-02.svg" class="im1" id="foot"> -->
 			</div>
 
 			<div class="mobi">
@@ -42,31 +177,93 @@
 				<img src="Desktop pic/7.5-02.svg" id="im2">
 				<img src="Desktop pic/7.4-02.svg" id="im2">
 				<img src="Desktop pic/7.4.svg" class="im3">
-				<img src="Desktop pic/7.3-02.svg" id="im2">
-				<img src="Desktop pic/7.1-02.png" id="im3">
-				<img src="Desktop pic/7.2-02.svg" id="im2">
-				<img src="Desktop pic/newlogo_mibile-01.svg" id="im4">
-				<img src="Desktop pic/Footer(mobile) finalllll-02.svg" id="mfoot">
+				<img src="Desktop pic/7.3-02.svg" class="position-relative" id="im2">
+				<!-- <img src="Desktop pic/7.1-02.png"  id="im3"> -->
+				<!-- <img src="Desktop pic/7.2-02.svg"  id="im2"> -->
+				<div  class="im1 p-text dark-text" id="mtext1">
+					<h2 class="head-text head7">หน่วยงานให้คำปรึกษา</h2>
+					หากท่านที่มีความสนใจ และมีความพร้อมที่จะดำเนินการตามแนว เกษตรทฤษฎีใหม่ สามารถขอคำปรึกษา ขอข้อมูล และเยี่ยมชม แปลงสาธิตเกษตรทฤษฎีใหม่ได้ดังนี้
+				</div>
+				<!-- <div  class="im1 p-text dark-text" id="mtext2">
+						หากท่านที่มีความสนใจ และมีความพร้อมที่จะดำเนินการตามแนว เกษตรทฤษฎีใหม่ สามารถขอคำปรึกษา ขอข้อมูล และเยี่ยมชม แปลงสาธิตเกษตรทฤษฎีใหม่ได้ดังนี้
+				</div> -->
+				<div  class="im1 p-text light-text" id="mtext3">
+						สำนักงานคณะกรรมการพิเศษเพื่อประสานงาน<br>
+						โครงการอันเนื่องมาจากพระราชดำริ (สำนักงาน กปร.)<br><br>
+						มูลนิธิชัยพัฒนา<br>
+						ติดต่อ : กองประชาสัมพันธ์<br>
+						" โทรศัพท์ 028-061-930 "<br>
+						<div class="divider"></div>
 
-				<button id="close-image" onclick="showPage()">
-					<img src="Desktop pic/threelines.png" id="im5">
-					<div class="dropdown-content" id="myDiv" style="display:none">
-						<ul>
-							<li id="list2"><a id="text1" href="../index.html">หน้าแรก</a></li>
-							<li id="list1"><a id="text1" href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-							<li id="list1"><a id="text1" href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-							<li id="list1"><a id="text1" href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-							<li id="list1"><a id="text1" href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-							<li id="list1"><a id="text1" href="6.html">ฝากให้รู้ไว้</a></li>
-							<li id="list1"><a id="text1" href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li>
-						</ul>
-					</div>
-				</button>
+						โครงการพัฒนาพื้นที่บริเวณวัดมงคลชัยพัฒนาโครงการอันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอเฉลิมพระเกียรติ จังหวัดสระบุรี<br>
+						ติดต่อ : ผู้อำนวยการสถานีทดลองพืชไร่พระพุทธบาท<br>
+						" โทรศัพท์ 036-499-181 "<br>
+						<div class="divider"></div>
+						<!-- ศูนย์ศึกษาการพัฒนาเขาหินซ้อนโครงการอันเนื่องมาจากพระราชดำริ -->
+						ศูนย์ศึกษาการพัฒนาเขาหินซ้อนโครงการอันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอพนมสารคาม จังหวัดฉะเชิงเทรา<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ เขาหินซ้อน<br>
+						" โทรศัพท์ 038-599-105 "<br>
+						<div class="divider"></div>
+
+						โครงการพัฒนาพื้นที่บริเวณอ่างเก็บน้ำคลองสีเสียด โครงการอันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอปากพลี จังหวัดนครนายก<br>
+						ติดต่อ : นายอำเภอปากพลี<br>
+						" โทรศัพท์ 037-399-657 "<br>
+						<div class="divider"></div>
+
+						ศูนย์ศึกษาการพัฒนาอ่าวคุ้งกระเบนอันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอท่าใหม่ จังหวัดจันทบุรี <br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ อ่าวคุ้งกระเบน<br>
+						" โทรศัพท์ 039-369-216 "-8<br>
+						<div class="divider"></div>
+
+						ศูนย์ศึกษาการพัฒนาภูพานอันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอเมือง จังหวัดสกลนคร<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ ภูพาน<br>
+						" โทรศัพท์ 042-712-975 "<br>
+						ติดต่อ : ผู้อำนวยการสถานีทดลองพืชไร่สกลนคร<br>
+						" โทรศัพท์ 042-711-008 "<br>
+						<div class="divider"></div>
+
+						โครงการสาธิตทฤษฎีใหม่บ้านแดนสามัคคี<br><br>
+						อำเภอเขาวง จังหวัดกาฬสินธุ์<br>
+						ติดต่อ : นายอำเภอเขาวง<br>
+						" โทรศัพท์ 043-589-089 "<br>
+						<div class="divider"></div>
+
+						โครงการสาธิตทฤษฎีใหม่อันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอปักธงชัย จังหวัดนครราชสีมา<br>
+						ติดต่อ : ผู้อำนวยการสถานีทดลองพืชไร่บ้านใหม่สำโรง<br>
+						" โทรศัพท์ 044-325-048 "<br>
+						<div class="divider"></div>
+
+						ศูนย์ศึกษาการพัฒนาห้วยฮ่องไคร้อันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอดอยสะเก็ด จังหวัดเชียงใหม่<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ ห้วยฮ่องไคร้<br>
+						" โทรศัพท์ 053-246-402 "<br>
+						<div class="divider"></div>
+
+						ศูนย์ศึกษาการพัฒนาพิกุลทองอันเนื่องมาจากพระราชดำริ<br><br>
+						อำเภอเมือง จังหวัดนราธิวาส<br>
+						ติดต่อ : ผู้อำนวยการศูนย์ ฯ พิกุลทอง<br>
+						" โทรศัพท์ 073-513-560 "<br>
+						<div class="divider"></div>
+				</div>
+				<div  class="bgm p-text dark-green-text" id="mfoot">
+						<div>
+								เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+								แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+						</div>
+				</div>
 			</div>
 
 		</div>
 
 	</div>
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/navbar.js"></script>
 	<script type="text/javascript">
 		function showPage() {
 			var x = document.getElementById("myDiv")

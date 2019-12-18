@@ -5,10 +5,87 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="สาระน่ารู้ที่ขาดไม่ได้.css">
-
+	<link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="../css/page1.css"> -->
+	<style>
+		.nav-active,
+		.nav-active:hover,
+		.nav-link:hover {
+			color: #bf7c40  !important;
+		}
+	</style>
 </head>
 <body>
-
+	<nav class="navbar navbar-expand-lg" id="navbar">
+				<a class="navbar-brand">
+				</a>
+				<div onclick="openMenu()" id="hamburger" class="d-lg-none d-sm-block nav-hamburger nav-hamburger--elastic">
+							<span class="nav-hamburger-box">
+								<span class="nav-hamburger-inner"></span>
+							</span>
+				</div>
+		
+				<div class="navbar-collapse d-none d-lg-block">
+							<ul class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<a id="home" href="../index.html" class="nav-link">หน้าแรก</a>
+									</li>
+									<li class="nav-item">
+										<a id="head1" href="../page1.html" class="nav-link">รู้จักทฤษฎีใหม่</a>
+									</li>
+									<li class="nav-item">
+										<a id="head2" href="../page2.html" class="nav-link">วิถีทฤษฎีใหม่</a>
+									</li>
+									<li class="nav-item">
+										<a id="head4" href="./4.html" class="nav-link">ทฤษฎีใหม่ขั้นต้น</a>
+									</li>
+									<li class="nav-item">
+										<a id="head5" href="./5.html"
+											class="nav-link">ทฤษฎีใหม่ขั้นก้าวหน้า</a>
+									</li>
+									<li class="nav-item nav-active">
+										<a id="head6" href="./6.html" class="nav-link">ฝากให้รู้ไว้</a>
+									</li>
+									<li class="nav-item">
+										<a id="head7" href="./7.html" class="nav-link">หน่วยงานให้คำปรึกษา</a>
+									</li>
+							</ul>
+				</div>
+		
+				<div id="menuMobile" class="nav-hide-menu">
+							<div id="menuWrap" class="nav-menu-wrap nav-bounce">
+								<a href="../index.html" class="nav-menu">
+									<img src="../assets/home/menu1.svg" />
+									<p>หน้าแรก</p>
+								</a>
+								<a href="../page1.html" class="nav-menu">
+									<img src="../assets/home/menu1.svg" />
+									<p>รู้จักทฤษฎีใหม่</p>
+								</a>
+								<a href="../page2.html" class="nav-menu">
+									<img src="../assets/home/menu2.svg" />
+									<p>วิถีทฤษฎีใหม่</p>
+								</a>
+								<a href="./4.html" class="nav-menu">
+									<img src="../assets/home/menu3.svg" />
+									<p>ทฤษฎีใหม่ขั้นต้น</p>
+								</a>
+								<a href="./5.html" class="nav-menu">
+									<img src="../assets/home/menu4.svg" />
+									<p>ทฤษฎีใหม่ขั้นก้าวหน้า</p>
+								</a>
+								<a href="./6.html" class="nav-menu">
+									<img src="../assets/home/menu5.svg" />
+									<p>ฝากให้รู้ไว้</p>
+								</a>
+								<a href="./7.html" class="nav-menu">
+									<img src="../assets/home/menu6.svg" />
+									<p>หน่วยงานให้คำปรึกษา</p>
+								</a>
+							</div>
+				</div>
+	</nav>
 	<div class="wrapper">
 		
 		<div  class="desk">
@@ -22,30 +99,171 @@
 				<img src="desktop/6.7-2-02.svg" class="imag1" id="tooll">
 				<img src="desktop/6.7-2-01.svg" class="imag1" id="tool">
 
-				<img src="desktop/6.6.svg" class="imag1" id="bg2">
+				<img src="desktop/6.6.svg" class="imag1 position-relative" id="bg2">
 				<img src="desktop/6.3.svg" class="imag1" id="human">
 				<img src="desktop/6.4.svg" class="imag1" id="human2">
 				<img src="desktop/6.5.svg" class="imag1" id="human3">
 				<img src="desktop/6.2.svg" class="imag1" id="photo">
-				<img src="desktop/6.1.svg" class="imag1" id="text1">
-				<img src="desktop/0.1 new logo.svg" class="imag1" id="logo">
-				<!-- <img src="desktop/Menu re-01.svg" class="imag1" id=""> -->
-				<img src="desktop/Footer finalllll-02.svg" class="imag1" id="foot">
+				<div class="text imag1 dark-text p-text" id="text1">
+					<h2 class="head-text head6">ฝากให้รู้ไว้</h2>
+					<p>
+							ในบั้นปลายชีวิตหลายคนเลือกที่จะทําเกษตรกรรม แต่การจะทํา<br>
+							เกษตรนั้นไม่ใช่เพียงความอยากทําก็ทําได้เลย นอกจากความรู้ความ<br>
+							สามารถเรายังต้องมีความมุ่งมัน ตั้งใจที่แน่วแน่ไม่ถอดใจกลางคัน<br>
+							ไม่เช่นนั้นเราคงได้ ล้มเหลวในสักวันหนึ่งซึ่งเราขอใช้พื้นที่นี้ในการ<br>
+							กระจายเคล็ดเล็กๆ ที่ไม่ลับให้กับทุกคน
+					</p>
+
+				</div>
+				<div class="text imag1 subhead-text light-text" id="text2">
+						<h1>3 ประการจำเป็น</h1>
+				</div>
+				<div class="text imag1 p-text light-text" id="text3">
+						<h3 class="subhead-text">อุดมการณ์</h3>
+						<p>
+							การทำสิ่งใดสิ่งหนึ่งด้วยความมุ่งมั่นตั้งใจ มีความเชื่อ<br>
+							ว่าการทำเกษตร นำไปซึ่งความมั่นคง เป็นนายตัวเอง<br>
+							สามารถหาเลี้ยงชีพได้ ไม่อดตาย ทั้งยังเป็นอาชีพที่มี<br>
+							ศักดิ์ศรี มีปัญหาอุปสรรคก็ไม่ยอมแพ้ พร้อมที่จะเดิน<br>
+							หน้าไปสู่จุดมุ่งหมาย
+						</p>
+				</div>
+				<div class="text imag1 p-text light-text" id="text4">
+						<h3 class="subhead-text">วิชาการ</h3>
+						<p>
+							การทำเกษตรด้วยความรู้ความสามารถที่ได้ศึกษา<br>
+							ร่ำเรียน อย่างถูกต้องมาใช้กับการทำเกษตร และพัฒนา<br>
+							ต่อยอดให้เกิดประโยชน์มากที่สุด
+						</p>
+				</div>
+				<div class="text imag1 p-text light-text" id="text5">
+						<h3 class="subhead-text">ประสบการณ์</h3>
+						<p>
+							การใช้ความผิดพลาดหรือสิ่งตนเคยประสบพบเจอ<br>
+							มาจากการลงมือทำจริงด้วยตนเอง ซึ่งจะได้ทั้ง<br>
+							ความเข้าใจที่ถ่องแท้ถึงเรื่องปัญหาและการจัดการ<br>
+							เกษตรกรรม และได้นำประสบการณ์ที่ได้ส่งต่อให้<br>
+							กับผู้อื่นได้อีกด้วย
+						</p>
+				</div>
+				<div class="text imag1 p-text light-text" id="text6">
+					<p>
+							<h3 class="subhead-text">หลักการทำเกษตร</h3>
+							<h3 class="subhead-text">แบบสวนกระแส</h3>
+							<div class="mt-4"></div>
+							การทำเกษตรไม่จำเป็นเป็นต้องปลูกของแพง เราสามารถทำเกษตรแบบผสมผสาน ปลูกผักสวนครัวเน้นใช้งาน<br>
+							ไม่เน้นขาย จะทำให้มีประโยชน์กว่าการปลูกไร่ตามกระแส ซึ่งมีหลักการดำเนินการ ขั้นตอนดังนี้
+					</p>
+						
+				</div>
+				<div class="text imag1 p-text dark-text" id="text7">
+						มุ่งเน้นให้มีกิน<br>
+						การปลูกพืชที่เรากินเองได้<br>
+						เหลือก็สามารถนำไปขาย<br>
+						ต่อเรียนรู้ประโยชน์ของพืช<br>
+						แต่ละชนิดและศึกษาวิธีการ<br>
+						ปลูก โรคและระยะเวลาการ<br>
+						ให้ผลผลิต
+				</div>
+				<div class="text imag1 p-text dark-text" id="text8">
+						สร้างรายได้ขยายผล<br>
+						การปลูกพืชนอกฤดู จะ<br>
+						ทำให้ผลิตสินค้าออกในช่วง<br>
+						ที่ขายได้ราคาดีและไม่มีคู่<br>
+						แข่งทางการตลาด ต้องทำ<br>
+						อย่างช้าๆ และรอบคอบ<br>
+						ให้ผลผลิต
+				</div>
+				<div class="text imag1 p-text dark-text" id="text9">
+						การทำกิ่งพันธุ์ เมล็ดพันธุ์<br>
+						ขายหรือแปรรูปผลผลิตเพิ่ม<br>
+						มูลค่า มีการรวมกลุ่มและ<br>
+						สร้างศูนย์การเรียนรู้หรือ<br>
+						แแหล่งท่องเที่ยวเชิงเกษตร<br>
+						เพิ่มช่องทางหารายได้
+				</div>
+				<div class="text imag1 p-text light-text" id="text10">
+					<table class="m-auto">
+						<tr>
+							<td>สาเหตุที่ทำเกษตร</td>
+							<td>1. ไม่มีความรู้จริงในพืชนั้นๆ</td>
+						</tr>
+						<tr>
+							<td>แล้วจนลง</td>
+							<td>2. ปลูกพืชแปลงเดี่ยว</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>3. มุ่งแต่ทำขายไม่สนใจทำกิน</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>4. ซื้อของที่ไม่จำเป็น</td>
+						</tr>
+
+						<tr>
+							<td>องค์ประกอบที่จะทำให้</td>
+							<td>1. ทำเลหรือฮวยจุ้ย หากติดถนนจะดีมาก</td>
+						</tr>
+						<tr>
+							<td>ประสบความสำเร็จ</td>
+							<td>เพราะสามารถ ขายได้ในตัวเลย</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>2. ปลูกพืชเน้นขายใกล้บ้านเพื่อลดค่า</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>ขนส่ง และตัดปัญหาพ่อค้าคนกลาง</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>3. การทำเป็นแหล่งเรียนรู้เชิงท่องเที่ยว</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>เกษตรกรรม</td>
+						</tr>
+
+						<tr>
+							<td>แนวทางการแก้ไข</td>
+							<td>1. ศึกษาหาความรู้พืชที่ปลูก</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>2. เน้นคุณภาพไม่เน้นปริมาณ</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>3. เน้นเศรษฐกิจพอเพียง</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>4. ทำไร่นาสวนผสม</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>5. อย่าเน้นทำขาย ให้เน้นทำกิน</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>6. รู้ทันโลกวัตถุนิยม และใช้ให้เกิด</td>
+						</tr><tr>
+							<td></td>
+							<td>ประโยชน์</td>
+						</tr>
+
+					</table>
+				</div>
+				<div  class="imag1 p-text dark-green-text" id="foot">
+						<div>
+								เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+								แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+						</div>
+				</div>
 
 			</div>
-
-			<div class="goto">
-				<ul>
-					<li><a href="../index.html">หน้าแรก</a></li>
-					<li><a href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-					<li><a href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-					<li><a href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-					<li><a href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-					<li><a href="6.html">ฝากให้รู้ไว้</a></li>
-					<li><a href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li>
-				</ul>
-			</div>
-
 		</div>
 
 		<div class="mobi">
@@ -58,36 +276,123 @@
 				<img src="mobile/6.8.svg" class="imag1" id="mhuman2">
 				<img src="mobile/6.7-2-02.svg" class="imag1" id="mtool2">
 				<img src="mobile/6.7-2-01.svg" class="imag1" id="mtooll2">
-				<img src="mobile/6.6.svg" class="imag1" id="mbg2">
+				<img src="mobile/6.6.svg" class="imag1 position-relative" id="mbg2">
 				<img src="mobile/6.3.svg" class="imag1" id="mhuman3">
 				<img src="mobile/6.4.svg" class="imag1" id="mhuman4">
 				<img src="mobile/6.5.svg" class="imag1" id="mhuman5">
 				<img src="mobile/6.2.svg" class="imag1" id="mphoto">
-				<img src="mobile/6.1.svg" class="imag1" id="mtext">
-				<img src="mobile/0.1(mobile) new logo.svg" class="imag1" id="micon">
-				<img src="mobile/Footer(mobile) finalllll-02.svg" class="imag1" id="mfoot">
+				<!-- <img src="mobile/6.1.svg" class="imag1" id="mtext"> -->
+				<div class="mtext imag1 dark-text p-text" id="mtext">
+					<h2 class="head-text head6">ฝากให้รู้ไว้</h2>
+					<p>
+							ในบั้นปลายชีวิตหลายคนเลือกที่จะทําเกษตรกรรม แต่การจะทํา
+							เกษตรนั้นไม่ใช่เพียงความอยากทําก็ทําได้เลย นอกจากความรู้ความ
+							สามารถเรายังต้องมีความมุ่งมัน ตั้งใจที่แน่วแน่ไม่ถอดใจกลางคัน
+							ไม่เช่นนั้นเราคงได้ ล้มเหลวในสักวันหนึ่งซึ่งเราขอใช้พื้นที่นี้ในการ
+							กระจายเคล็ดเล็กๆ ที่ไม่ลับให้กับทุกคน
+					</p>
+				</div>
+				<div class="mtext imag1 light-text" id="mtext2">
+					<h3 class="subhead-text">3 ประการจำเป็น</h3>
+				</div>
+				<div class="mtext imag1 light-text p-text" id="mtext3">
+						<h5 class="subhead-text">อุดมการณ์</h5>
+						<p>
+							การทำสิ่งใดสิ่งหนึ่งด้วยความมุ่งมั่นตั้งใจ มีความเชื่อ
+							ว่าการทำเกษตร นำไปซึ่งความมั่นคง เป็นนายตัวเอง
+							สามารถหาเลี้ยงชีพได้ ไม่อดตาย ทั้งยังเป็นอาชีพที่มี
+							ศักดิ์ศรี มีปัญหาอุปสรรคก็ไม่ยอมแพ้ พร้อมที่จะเดิน
+							หน้าไปสู่จุดมุ่งหมาย
+						</p>
+				</div>
+				<div class="mtext imag1 light-text p-text" id="mtext4">
+						<h5 class="subhead-text">วิชาการ</h5>
+						<p>
+							การทำเกษตรด้วยความรู้ความสามารถที่ได้ศึกษา
+							ร่ำเรียน อย่างถูกต้องมาใช้กับการทำเกษตร และพัฒนา
+							ต่อยอดให้เกิดประโยชน์มากที่สุด
+						</p>
+				</div>
+				<div class="mtext imag1 light-text p-text" id="mtext5">
+						<h5 class="subhead-text">ประสบการณ์</h5>
+						<p>
+							การใช้ความผิดพลาดหรือสิ่งตนเคยประสบพบเจอ
+							มาจากการลงมือทำจริงด้วยตนเอง ซึ่งจะได้ทั้ง
+							ความเข้าใจที่ถ่องแท้ถึงเรื่องปัญหาและการจัดการ
+							เกษตรกรรม และได้นำประสบการณ์ที่ได้ส่งต่อให้
+							กับผู้อื่นได้อีกด้วย
+						</p>
+				</div>
+				<div class="mtext imag1 light-text p-text" id="mtext6">
+					<p>
+							<h5 class="subhead-text">หลักการทำเกษตร</h5>
+							<h5 class="subhead-text">แบบสวนกระแส</h5>
+							<div class="mt-4"></div>
+							การทำเกษตรไม่จำเป็นเป็นต้องปลูกของแพง เราสามารถทำเกษตรแบบผสมผสาน ปลูกผักสวนครัวเน้นใช้งาน
+							ไม่เน้นขาย จะทำให้มีประโยชน์กว่าการปลูกไร่ตามกระแส ซึ่งมีหลักการดำเนินการ ขั้นตอนดังนี้
+					</p>
+						
+				</div>
+				<div class="mtext imag1 dark-text p-text" id="mtext7">
+						มุ่งเน้นให้มีกิน
+						การปลูกพืชที่เรากินเองได้
+						เหลือก็สามารถนำไปขาย
+						ต่อเรียนรู้ประโยชน์ของพืช
+						แต่ละชนิดและศึกษาวิธีการ
+						ปลูก โรคและระยะเวลาการ
+						ให้ผลผลิต
+				</div>
+				<div class="mtext imag1 dark-text p-text" id="mtext8">
+						สร้างรายได้ขยายผล
+						การปลูกพืชนอกฤดู จะ
+						ทำให้ผลิตสินค้าออกในช่วง
+						ที่ขายได้ราคาดีและไม่มีคู่
+						แข่งทางการตลาด ต้องทำ
+						อย่างช้าๆ และรอบคอบ
+						ให้ผลผลิต
+				</div>
+				<div class="mtext imag1 dark-text p-text" id="mtext9">
+						การทำกิ่งพันธุ์ เมล็ดพันธุ์
+						ขายหรือแปรรูปผลผลิตเพิ่ม
+						มูลค่า มีการรวมกลุ่มและ
+						สร้างศูนย์การเรียนรู้หรือ
+						แแหล่งท่องเที่ยวเชิงเกษตร
+						เพิ่มช่องทางหารายได้
+				</div>
+				<div class="mtext imag1 light-text p-text" id="mtext10">
+						สาเหตุที่ทำเกษตรแล้วจนลง<br>
+						1. ไม่มีความรู้จริงในพืชนั้นๆ<br>
+						2. ปลูกพืชแปลงเดี่ยว<br>
+						3. มุ่งแต่ทำขายไม่สนใจทำกิน<br>
+						4. ซื้อของที่ไม่จำเป็น<br><br>
+
+						องค์ประกอบที่จะทำให้ประสบความสำเร็จ<br>
+						1. ทำเลหรือฮวยจุ้ย หากติดถนนจะดีมาก เพราะสามารถ ขายได้ในตัวเลย<br>
+						2. ปลูกพืชเน้นขายใกล้บ้านเพื่อลดค่า<br>
+						3. การทำเป็นแหล่งเรียนรู้เชิงท่องเที่ยวเกษตรกรรม<br><br>
+
+						แนวทางการแก้ไข<br>
+						1. ศึกษาหาความรู้พืชที่ปลูก<br>
+						2. เน้นคุณภาพไม่เน้นปริมาณ<br>
+						3. เน้นเศรษฐกิจพอเพียง<br>
+						4. ทำไร่นาสวนผสม<br>
+						5. อย่าเน้นทำขาย ให้เน้นทำกิน<br>
+						6. รู้ทันโลกวัตถุนิยม และใช้ให้เกิดประโยชน์<br>
+				</div>
+				<div  class="bgm dark-green-text p-text" id="mfoot">
+						<div>
+								เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์ คณะสถาปัตยกรรมศาสตร์ และการโปรแกรมและสื่อประสม
+								แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง “
+						</div>
+				</div>
 				
 			</div>
-
-			<button id="close-image" onclick="showPage()">
-				<img src="mobile/threelines.png" id="im5">
-				<div class="dropdown-content" id="myDiv" style="display:none">
-					<ul>
-						<li id="list2"><a id="mtext8" href="../index.html">หน้าแรก</a></li>
-						<li id="list1"><a id="mtext8" href="../page1.html">รู้จักทฤษฎีใหม่</a></li>
-						<li id="list1"><a id="mtext8" href="../page2.html">วิถีทฤษฎีใหม่</a></li>
-						<li id="list1"><a id="mtext8" href="4.html">ทฤษฎีใหม่ขั้นต้น</a></li>
-						<li id="list1"><a id="mtext8" href="5.html">ทฤษฎีใหม่ขั้นก้าวหน้า</a></li>
-						<li id="list1"><a id="mtext8" href="6.html">ฝากให้รู้ไว้</a></li>
-						<li id="list1"><a id="mtext8" href="7.html" id="pad">หน่วยงานให้คำปรึกษา</a></li>
-					</ul>
-				</div>
-			</button>
 
 		</div>
 
 	</div>
-
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/navbar.js"></script>
 	<script type="text/javascript">
 		function showPage() {
 				var x = document.getElementById("myDiv")
