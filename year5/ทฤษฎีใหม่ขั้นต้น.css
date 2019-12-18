@@ -1093,3 +1093,22 @@ li a{
 .navbar {
 	position: absolute !important;
 }
+
+
+
+@media screen and (max-width: 460px) {
+  .navbar {
+    width: 118vw;
+    left: -18vw;
+    position: relative;
+  }
+  .subhead-text {
+    font-size: 3.6vh;
+  
+  }
+  
+  .head-text {
+    font-size: 5.3vh;
+    font-family: Itim;
+  }
+}
